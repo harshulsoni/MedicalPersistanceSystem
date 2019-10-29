@@ -14,6 +14,8 @@ class QuestionsController < ApplicationController
 
   # GET /questions/new
   def new
+    questionFile = File.read('config/questions.json')
+    @questionsHash = JSON.parse(questionFile)
     @question = Question.new
   end
 
