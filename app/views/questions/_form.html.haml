@@ -1,0 +1,63 @@
+= form_for(@question) do |f|
+  - if @question.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@question.errors.count, "error")
+        prohibited this question from being saved:
+      %ul
+        - @question.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :name
+    %br/
+    = f.text_field :name
+  .field
+    = f.label :mrn
+    %br/
+    = f.text_area :mrn
+  .field
+    = f.label :age
+    %br/
+    = f.number_field :age
+  .field
+    = f.label :question2
+    %br/
+    = f.number_field :question2
+  .field
+    = f.label :question3
+    %br/
+    = f.number_field :question3
+  .field
+    = f.label :question4
+    %br/
+    = f.check_box :question4
+  .field
+    = f.label :question51
+    %br/
+    = f.number_field :question51
+  .field
+    = f.label :question52
+    %br/
+    = f.number_field :question52
+  .field
+    = f.label :question53
+    %br/
+    = f.number_field :question53
+  .field
+    = f.label :question54
+    %br/
+    = f.number_field :question54
+  .field
+    = f.label :question55
+    %br/
+    = f.number_field :question55
+  .field
+    = f.label :question56
+    %br/
+    = f.number_field :question56
+  .field
+    = f.label :question6
+    %br/
+    = f.number_field :question6
+  .actions
+    = f.submit
