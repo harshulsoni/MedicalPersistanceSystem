@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mrn: MyText
+  age: 1
+  question2: 1
+  question3: 1
+  question4: false
+  question51: 1
+  question52: 1
+  question53: 1
+  question54: 1
+  question55: 1
+  question56: 1
+  question6: 1
+
+two:
+  name: MyString
+  mrn: MyText
+  age: 1
+  question2: 1
+  question3: 1
+  question4: false
+  question51: 1
+  question52: 1
+  question53: 1
+  question54: 1
+  question55: 1
+  question56: 1
+  question6: 1
