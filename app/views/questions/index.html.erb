@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mrn</th>
+      <th>Age</th>
+      <th>Question2</th>
+      <th>Question3</th>
+      <th>Question4</th>
+      <th>Question51</th>
+      <th>Question52</th>
+      <th>Question53</th>
+      <th>Question54</th>
+      <th>Question55</th>
+      <th>Question56</th>
+      <th>Question6</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @questions.each do |question| %>
+      <tr>
+        <td><%= question.name %></td>
+        <td><%= question.mrn %></td>
+        <td><%= question.age %></td>
+        <td><%= question.question2 %></td>
+        <td><%= question.question3 %></td>
+        <td><%= question.question4 %></td>
+        <td><%= question.question51 %></td>
+        <td><%= question.question52 %></td>
+        <td><%= question.question53 %></td>
+        <td><%= question.question54 %></td>
+        <td><%= question.question55 %></td>
+        <td><%= question.question56 %></td>
+        <td><%= question.question6 %></td>
+        <td><%= link_to 'Show', question %></td>
+        <td><%= link_to 'Edit', edit_question_path(question) %></td>
+        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question', new_question_path %>
