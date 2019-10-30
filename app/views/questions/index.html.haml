@@ -1,10 +1,10 @@
 %p#notice= notice
-%h1 Listing Questions
+%h1 Survey
 %table
   %thead
     %tr
-      %th Name
-      %th Mrn
+      %th Name :
+      %th MRN
       %th Age
       %th Question2
       %th Question3
@@ -37,4 +37,4 @@
         %td= link_to 'Edit', edit_question_path(question)
         %td= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
-= link_to 'New Question', new_question_path
+= link_to 'New Response', new_question_path
