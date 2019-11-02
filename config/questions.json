@@ -1,0 +1,57 @@
+{
+    "1": {
+        "type": "string",
+        "value" : "Age (in years): "
+    },
+    "2": {
+        "type": "option",
+        "value" : "Compared to women your age, how would you rate your own risk of fracturing or breaking a bone?",
+        "options" : ["Much Lower", "A little lower", "About the same", "A little longer", "Much higher"]
+    },
+    "3": {
+        "type": "option",
+        "value" : "How confident are you filling out medical form yourself?",
+        "options" : ["Not at all", "A little lower", "Somewhat", "Quite a bit", "Extremely"]
+    },
+    "4": {
+        "type": "option",
+        "value" : "People get information about osteoporosis medication from different sources. Have you received information about possible osteoporosis medications in the past year?",
+        "options" : ["No", "Yes"]
+    },
+    "5": {
+        "type": "integers",
+        "value" : "For each of the following, please mark the one answer that best represents yout views on osteoporosis and osteoporosis treatment.",
+        "subvalues" : ["There are better ways for me to treat my osteoporosis besides medication.",
+                        "Doctors are too quick to prescribe medication.",
+                        "Doctors often give medication when advice would be better.",
+                        "I can take care of my osteoporosis with out medication.",
+                        "Medications often cause more problems then they solve.",
+                        "I prefer not to take medication."
+                    ],
+        "median": 2.5
+    },
+    "6": {
+        "type": "option",
+        "value" : "Please choose the one statement that best reflects your feelings about receiving osteoporosis medication now.",
+        "options" : ["I do not think I need treatment for osteoporosis.",
+                    "I am aware that there are treatment available for my osteoporosis but I have never thought seriously about using these medications.",
+                    "I have considered using or have previously used Osteoporosis medication but I have decided against taking it.",
+                    "I am current;y considering the use of osteoporosis medication but I have not made up my mind.",
+                    "I have decided to use osteoporosis medication but I have not yet started taking anything.",
+                    "I have started medication for osteoporosis"
+                    ]
+    },
+    "dashboard": {
+        "columns": ["Don't think treatment is needed",
+                    "Not thinking about/Deciding against treatment",
+                    "Thinking about treatment",
+                    "Active Treatment"
+                ],
+        "rows": ["Age>=70",
+                "High perceived Fx Risk",
+                "Adequate Literacy",
+                "High trust for medication",
+                "Receipt for medication Information"
+                ]       
+    }
+}
