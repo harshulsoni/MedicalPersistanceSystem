@@ -139,5 +139,11 @@
       I have started taking medication for osteoporosis    
   
     %br/  
-  .form-group
-    = f.submit 
+    %br/
+    
+  .form-group#center
+    
+    
+    = link_to 'Go Back', questions_path, :class => "btn btn-danger"
+    
+    = f.submit  'Submit Response', :class => "btn btn-success"
