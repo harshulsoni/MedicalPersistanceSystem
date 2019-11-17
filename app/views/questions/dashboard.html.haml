@@ -1,46 +1,86 @@
 .container
-%br
-    %h1 Welcome to DashBoard
+    %br
+    .container-header
+        %h1{:id=>"dash"} Welcome to DashBoard
     %br
     .card
         .card-header
-            %h4{:class=>"card-title"} Patient Profile
+            %h5{:class=>"card-title"} Patient Profile
         .card-body
-            %h5 John Doe
+            .row
+                .col-8
+                    %h6 Name : John Doe
+                    %h6 Age in Years : 23
+                    %h6 MRN : 123456789
+                .col-4
+                    %h6 Date : 12/12/2012
+                    %br
+                    .dropdown
+                        %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
+                        .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+                            %a.dropdown-item{:href => "#"} Action
+                            %a.dropdown-item{:href => "#"} Another action
+                            %a.dropdown-item{:href => "#"} Something else here
+
+                        
     %br    
     .card
         .card-header
-            %h4{:class=>"card-title"} Stage of Readiness
+            %h5{:class=>"card-title"}Current Stage of Readiness
         .card-body
-            %table.table.table-bordered
+            %table.table.table-bordered.table-hover
                 %thead
+                    %tr{:id =>"table-label"}
+                        %th{:scope => "col"}Dashboard
+                        %th{:colspan =>"5",:id=>"col_dash"}Stages of Readiness
                     %tr
-                        %th{:scope => "col"} #
-                        %th{:scope => "col"} First
-                        %th{:scope => "col"} Last
-                        %th{:scope => "col"} Handle
+                        %th{:scope => "col"} 
+                        %th{:scope => "col"} Dont Think Treatment is needed
+                        %th{:scope => "col"} Not Thinking about / Decided Against Treament
+                        %th{:scope => "col"} Thinking about Treatment
+                        %th{:scope => "col"} Active Treatment
                 %tbody
                     %tr
-                        %th{:scope => "row"} 1
-                        %td Mark
-                        %td Otto
-                        %td @mdo
+                        %th{:scope => "row"} Age>=70y
+                        %td +/-
+                        %td +/-
+                        %td +/-
+                        %td +/-
                     %tr
-                        %th{:scope => "row"} 2
-                        %td Jacob
-                        %td Thornton
-                        %td @fat
+                        %th{:scope => "row"} High Perceived Fx Risk
+                        %td +/-
+                        %td +/-
+                        %td +/-
+                        %td +/-
                     %tr
-                        %th{:scope => "row"} 3
-                        %td{:colspan => "2"} Larry the Bird
-                        %td @twitter
-
+                        %th{:scope => "row"} Adequate Literacy
+                        %td +/-
+                        %td +/-
+                        %td +/-
+                        %td +/-
+                    %tr
+                        %th{:scope => "row"} High Trust for Medication
+                        %td +/-
+                        %td +/- 
+                        %td +/-
+                        %td +/-
+                    %tr
+                        %th{:scope => "row"} Receipt for Medication Information
+                        %td +/-
+                        %td +/-
+                        %td +/-
+                        %td +/-
+    %br                    
     .card
         .card-header
-            %h4{:class=>"card-title"} Counselling Points
+            %h5{:class=>"card-title"} Counselling Points
         .card-body
             %p 1)Take Fees First
             %p 2)Pretend to care
             %p 3)Advise costly tests
             %p 4)Prescribe  a costly dummy pill
             
+    %br
+    .container-footer
+        = link_to 'Back to List', questions_path, :class => "dash btn btn-danger btn-lg"
+    %br

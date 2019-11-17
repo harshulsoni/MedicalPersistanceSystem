@@ -1,3 +1,21 @@
+.container-header,.container-footer{
+    text-align:center;
+}
+.container{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,93,133,1) 0%, rgba(0,181,149,1) 90% );
+    // background-image: linear-gradient(#7887ab, #7887ab);
+}
 
-        
-            
+#dash{
+    text-align:center;
+    display:inline-block;
+    font-family: "Times New Roman", Times,sans-serif;
+    color: white;
+}
+.table{
+    text-align:center;
+    
+}        
+#table-label{
+    background-color: coral;
+}           

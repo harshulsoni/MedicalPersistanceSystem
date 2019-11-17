@@ -5274,3 +5274,482 @@ Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 12
 Processing by QuestionsController#dashboard as HTML
   Rendered questions/dashboard.html.haml within layouts/application (5.7ms)
 Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 18:21:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 245ms (Views: 237.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero.jpg" for 173.219.167.170 at 2019-11-17 18:21:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 18:21:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (18.1ms)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:21:46 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:26:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:27:39 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:28:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:32:42 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:33:33 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:42:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 2262ms (Views: 2262.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-a31b72bd0485a5c7badc4dedbddda50e0294a1a9ba0e1b988ff43ac0ceef44cd.css?body=1" for 173.219.167.170 at 2019-11-17 18:42:58 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:43:39 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1673ms (Views: 1672.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-bd314276c375e8df8be80ceae96dcfdd967a01af7e08da597b2dbe1a1943c7f3.css?body=1" for 173.219.167.170 at 2019-11-17 18:43:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:45:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:45:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:45:45 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:46:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:46:43 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:46:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:47:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:50:22 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 1715ms (Views: 1714.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-d5900588c9beacfd5bd98e01c2e9e13c920308c444a99d5cbe3724be95c3d99c.css?body=1" for 173.219.167.170 at 2019-11-17 18:50:24 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:51:00 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1664ms (Views: 1663.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-9348d16be56fe9ace55b7c9c98360cc98769b21e7b310b54a426298bd0f357a4.css?body=1" for 173.219.167.170 at 2019-11-17 18:51:02 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:51:59 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 1654ms (Views: 1653.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-ea0caf813478b512e5010d959025e9f40858e38d89abb6e27ac249ae9544bb0b.css?body=1" for 173.219.167.170 at 2019-11-17 18:52:01 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:52:26 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:53:46 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1663ms (Views: 1662.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-c65708b45c44cd20a34bd9ea82b1724402f525fe679649e227a7234f53be2a07.css?body=1" for 173.219.167.170 at 2019-11-17 18:53:48 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:54:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1681ms (Views: 1680.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-80b59454f244cdfa9889e8aea09c4aa228d5f4c9834c739360efed8c382e1897.css?body=1" for 173.219.167.170 at 2019-11-17 18:54:51 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 18:56:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 1677ms (Views: 1676.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/dashboard.self-67edc1a1d7960159bf62e96c8a0877be3b14aab28e2b1b5ec8a3378f150abebd.css?body=1" for 173.219.167.170 at 2019-11-17 18:56:57 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:57:00 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:57:43 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:58:02 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 18:58:48 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 1676ms (Views: 1675.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-0402df82b0d79947e9a0b0afff1cb494ad0a69af97629f1ae67354372d3ef0fe.css?body=1" for 173.219.167.170 at 2019-11-17 18:58:50 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:00:40 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 1671ms (Views: 1670.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-9a32b83f1464e31377e518faf17894dcd0aed97453a833fdc27c5768bdc0acbe.css?body=1" for 173.219.167.170 at 2019-11-17 19:00:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:02:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 1704ms (Views: 1703.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-9d40acc607d6784605a0c725df1f83314c01b651f14e31cfe7c4b6e553811060.css?body=1" for 173.219.167.170 at 2019-11-17 19:02:11 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:04:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1715ms (Views: 1714.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-6ef7dab3bf2522fdbb4fb360813a5b585169111a15295e07f87ec083791f77c0.css?body=1" for 173.219.167.170 at 2019-11-17 19:04:15 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:05:11 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1662ms (Views: 1661.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-9431070873ecad2077562751513bc62d0653aeb368a5d8fff56939dd295b129d.css?body=1" for 173.219.167.170 at 2019-11-17 19:05:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:07:26 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1665ms (Views: 1664.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-c95d095c7af0ffdbd9971e1648f8af6ef8d41c54fcf367877b5ae8b3da6c7a0d.css?body=1" for 173.219.167.170 at 2019-11-17 19:07:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:09:24 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 1659ms (Views: 1658.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-910e03d4e4823e2b5f26415cc490143d766a0d21809c9d26ac97ca8f746e5e41.css?body=1" for 173.219.167.170 at 2019-11-17 19:09:26 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:10:06 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 1646ms (Views: 1645.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-8416c37c7e358a0c8c8c956077c5b120ae2f202f9f0d95ba6a1a6b5dd985b1dd.css?body=1" for 173.219.167.170 at 2019-11-17 19:10:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:10:59 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 1683ms (Views: 1682.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-4d831f7a3e26ca8c32bb72d280798bb1c00b5227680947f1ae73ff6d39442326.css?body=1" for 173.219.167.170 at 2019-11-17 19:11:01 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:14:00 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:14:14 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (22.4ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:14:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 30ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:15:34 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:21:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:27:05 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:27:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:28:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:30:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:32:01 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 1674ms (Views: 1673.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-067b8af838c089e53e503332bd19c0f3ff5f108ba932efa9309813478b8b3211.css?body=1" for 173.219.167.170 at 2019-11-17 19:32:03 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:32:53 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1653ms (Views: 1652.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-1656c589762d9bc0c8b20422e7ea5a8d67653309448066436fc2f025986ec87a.css?body=1" for 173.219.167.170 at 2019-11-17 19:32:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:33:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1666ms (Views: 1665.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-b4bc456539f7720772f0b307b0ac866f23c5022a78c68e8fcf0491617f3c4e3b.css?body=1" for 173.219.167.170 at 2019-11-17 19:33:34 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:34:50 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1692ms (Views: 1691.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-bd0436c3c34825114ffc8d40376b1c164f3062c41db55992e960e3869b2d12e8.css?body=1" for 173.219.167.170 at 2019-11-17 19:34:52 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:35:12 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1665ms (Views: 1664.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-0b7eb321a58bcd9859633f2dbe287aa40e9c5b3897a80aee37d5f777b734a605.css?body=1" for 173.219.167.170 at 2019-11-17 19:35:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:37:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 1698ms (Views: 1697.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-9b962a4350cdd924b124008716cbc1ddcf88d2fadaab5e27a2f35ecf6d94ca94.css?body=1" for 173.219.167.170 at 2019-11-17 19:37:14 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 19:37:38 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-17 19:37:40 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 38ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 19:37:46 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.3ms)
