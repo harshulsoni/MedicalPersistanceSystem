@@ -2572,3 +2572,1241 @@ Processing by QuestionsController#new as HTML
   Rendered questions/_form.html.haml (23.0ms)
   Rendered questions/new.html.haml within layouts/application (23.9ms)
 Completed 200 OK in 44ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 12:16:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (1.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (36.1ms)
+Completed 200 OK in 458ms (Views: 443.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 12:16:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (81.0ms)
+  Rendered questions/new.html.haml within layouts/application (93.4ms)
+Completed 200 OK in 118ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 12:32:24 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:28:51 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 3216ms (Views: 3208.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-e7d6b1cca8251b47676b9d0f17d0cb9afdc36b550ddb59a4d8514c60fd8e33e4.css?body=1" for 173.219.167.170 at 2019-11-17 13:28:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 173.219.167.170 at 2019-11-17 13:28:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:38:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:38:34 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:39:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     .container
+    4:      .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
+    5:      %button.btn.btn-danger{"data-target" => "#form", "data-toggle" => "modal", :type => "button"}
+    6: 
+    7:     .col-md-8.col-lg-6
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:48:00 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:49:15 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 13:49:44 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     
+    4:     .d-none.d-md-flex.col-md-4.col-lg-6.
+    5:     %button.btn.btn-danger{"data-target" => "#form", "data-toggle" => "modal", :type => "button"}
+    6: 
+    7:     .col-md-8.col-lg-6
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:04:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 146ms (Views: 145.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/img/hero.jpg" for 173.219.167.170 at 2019-11-17 14:04:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.7ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:04:57 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:04:58 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.4ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:05:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:05:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:05:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:05:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.7ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:06:04 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:06:05 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:06:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:06:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.8ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:08:57 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:08:57 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:09:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:09:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.5ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:09:14 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:09:14 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:09:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 67ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:09:33 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.2ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:10:54 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 1671ms (Views: 1670.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-fb87acea76d641de474337104c8ed37067fc9488333b9e60832fa287d09adcaa.css?body=1" for 173.219.167.170 at 2019-11-17 14:10:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:10:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:13:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assets/imgages/hero.jpg" for 173.219.167.170 at 2019-11-17 14:13:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/imgages/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:15:25 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1709ms (Views: 1708.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-3d6178bd914aaa2df7ebef090c4c7b8ff5f3bed39f1ecf630131e769bce9794d.css?body=1" for 173.219.167.170 at 2019-11-17 14:15:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/assets/images/hero.jpg" for 173.219.167.170 at 2019-11-17 14:15:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/images/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:15:47 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1681ms (Views: 1680.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-a796fa4364a91f83a38fcc2168fc9d10eef544c39ab159e4141dfc500fd937d7.css?body=1" for 173.219.167.170 at 2019-11-17 14:15:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/app/assets/images/hero.jpg" for 173.219.167.170 at 2019-11-17 14:15:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.5ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:17:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 1711ms (Views: 1710.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-2e93ee1767e3deabb37713dd17dff5f6869965e6aa1613c57abf5bc590b6cea3.css?body=1" for 173.219.167.170 at 2019-11-17 14:17:31 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/images/hero.jpg" for 173.219.167.170 at 2019-11-17 14:17:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/hero.jpg"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/ec2-user/.rvm/rubies/ruby-2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:21:15 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 7 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
+    4:        %button.btn_survey Sign in
+    5: 
+    6:     .col-md-8.col-lg-6
+    7:       .login.d-flex.align-items-center.py-5
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:33:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 7 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     .d-none.d-md-flex.col-md-4.col-lg-6.bg-image
+    4:        %a.btn-survey{:href => "http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/"} Download it Here Sign in
+    5: 
+    6:     .col-md-8.col-lg-6
+    7:       .login.d-flex.align-items-center.py-5
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.1ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:34:15 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 7 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     .d-none.d-md-flex.col-md-4.col-lg-6
+    4:        %a.btn-survey{:href => "http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/"} Download it Here Sign in
+    5: 
+    6:     .col-md-8.col-lg-6
+    7:       .login.d-flex.align-items-center.py-5
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:34:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    1: .container-fluid
+    2:   .row.no-gutter
+    3:     .d-none.d-md-flex.col-md-4.col-lg-6
+    4:      %a.btn-survey{:href => "http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/"} Download it Here Sign in
+    5: 
+    6:     .col-md-8.col-lg-6
+    7:       .login.d-flex.align-items-center.py-5
+  app/views/questions/login.html.haml:4
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.7ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:34:37 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 1686ms (Views: 1685.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-8c22584f96352382d22c166cc7ac80261511dab543a87c114043eca0f8cef3af.css?body=1" for 173.219.167.170 at 2019-11-17 14:34:39 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:35:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:36:21 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 54ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:36:42 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:37:04 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:37:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:38:31 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:40:20 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:41:18 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:41:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:42:07 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:42:17 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:42:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:42:51 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:43:03 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:43:18 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 14:43:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 42ms (Views: 37.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:45:45 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 14:45:47 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (29.0ms)
+  Rendered questions/new.html.haml within layouts/application (32.1ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 14:45:55 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/questions" for 173.219.167.170 at 2019-11-17 14:46:52 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WGwTBpHVeAnZqFxzW/H6gQRlBAGYnEA1/mhytZ/ZeC1Td7qmYWfppzsOWuzCxlpi8OlmPe1wm16SVmX0FeBDCA==", "question"=>{"name"=>"bh", "mrn"=>"", "age"=>"", "question51"=>"", "question52"=>"", "question53"=>"", "question54"=>"", "question55"=>"", "question56"=>""}, "commit"=>"Submit Response"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "questions" ("name", "mrn", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bh"], ["mrn", ""], ["created_at", "2019-11-17 14:46:52.492895"], ["updated_at", "2019-11-17 14:46:52.492895"]]
+  [1m[35m (0.7ms)[0m  COMMIT
+Redirected to https://d18ed84fabc04e6a8bad5e746a977476.vfs.cloud9.us-east-2.amazonaws.com/questions/13
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/questions/13" for 173.219.167.170 at 2019-11-17 14:46:52 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  Rendered questions/show.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 59ms (Views: 50.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 14:46:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 14:49:26 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/13" for 173.219.167.170 at 2019-11-17 14:49:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 13]]
+  Rendered questions/show.html.haml within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:49:31 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 14:50:07 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 14:59:16 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (3.9ms)
+  Rendered questions/new.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 1658ms (Views: 1657.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-f57880e851ea89e065f5e43c7081c7cc7cc252eb6787cb4eb79eaa009f26f427.css?body=1" for 173.219.167.170 at 2019-11-17 14:59:18 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 14:59:25 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 15:05:04 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 371ms (Views: 363.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 15:05:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (54.6ms)
+  Rendered questions/new.html.haml within layouts/application (59.2ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (undefined local variable or method `root' for #<#<Class:0x007fc3745bbc58>:0x007fc3756b15d0>):
+    144:   .form-group#center
+    145:     
+    146:     
+    147:     = link_to 'Go Back', root, :class => "btn btn-danger"
+    148:     
+    149:     = f.submit  'Submit Response', :class => "btn btn-success"
+  app/views/questions/_form.html.haml:147:in `block in _app_views_questions__form_html_haml___4035853125170731526_70238732009900'
+  app/views/questions/_form.html.haml:1:in `_app_views_questions__form_html_haml___4035853125170731526_70238732009900'
+  app/views/questions/new.html.haml:3:in `_app_views_questions_new_html_haml___240575883347882_70238732628540'
+
+
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.2ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ec2-user/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.9ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 15:05:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (22.8ms)
+  Rendered questions/new.html.haml within layouts/application (23.8ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 15:05:53 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-17 15:06:10 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (3.8ms)
+  Rendered questions/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 173.219.167.170 at 2019-11-17 15:06:21 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AFMXRLd08ys+McmqT81h8jyM2nrLQNocwaHLMobeQksLSL7kR8ZihdyXzzXW+sERyAC4Rr6sAXetn9xzDOd5bg==", "question"=>{"name"=>"", "mrn"=>"", "age"=>"", "question51"=>"", "question52"=>"", "question53"=>"", "question54"=>"", "question55"=>"", "question56"=>""}, "quest6"=>"4", "commit"=>"Submit Response"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("name", "mrn", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", ""], ["mrn", ""], ["created_at", "2019-11-17 15:06:21.180037"], ["updated_at", "2019-11-17 15:06:21.180037"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to https://d18ed84fabc04e6a8bad5e746a977476.vfs.cloud9.us-east-2.amazonaws.com/questions/14
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/questions/14" for 173.219.167.170 at 2019-11-17 15:06:21 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 14]]
+  Rendered questions/show.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 32ms (Views: 26.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 15:06:41 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 15:07:09 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 15:07:23 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.3ms)

@@ -1,8 +1,17 @@
 class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
-
+  
+  def login
+    
+  end
+ 
+  def dashboard
+    
+  end
+  
   # GET /questions
   # GET /questions.json
+ 
   def index
     @questions = Question.all
   end
