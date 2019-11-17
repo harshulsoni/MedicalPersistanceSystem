@@ -5753,3 +5753,113 @@ Processing by QuestionsController#index as HTML
   [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
   Rendered questions/index.html.haml within layouts/application (3.3ms)
 Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:43:05 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 272ms (Views: 263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hero.jpg" for 173.219.167.170 at 2019-11-17 19:43:06 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:44:03 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 2275ms (Views: 2275.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-77735d2b7cb09d33e9cda6af7de017348832f4174cdfccc7eb56bdfeeb144dc6.css?body=1" for 173.219.167.170 at 2019-11-17 19:44:06 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/hero.jpg" for 173.219.167.170 at 2019-11-17 19:44:06 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:48:30 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1863ms (Views: 1862.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-da545cec7157b5c62e5ee9ee3e66c7393f1091c4cf9200bbd2901aaeab3663e8.css?body=1" for 173.219.167.170 at 2019-11-17 19:48:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/island.jpg" for 173.219.167.170 at 2019-11-17 19:48:32 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:49:26 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1732ms (Views: 1731.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-612d74940a66638c629baedadb99f2e11cee6ca6010e08b6a59831cf369ba4c3.css?body=1" for 173.219.167.170 at 2019-11-17 19:49:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/island.jpg" for 173.219.167.170 at 2019-11-17 19:49:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:49:44 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1712ms (Views: 1711.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-5424d55ba8652e60c5f24f4017ea3ced8b7f48efac28f880b72440fac535ac1c.css?body=1" for 173.219.167.170 at 2019-11-17 19:49:46 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/island.jpg" for 173.219.167.170 at 2019-11-17 19:49:46 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:54:48 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 1826ms (Views: 1825.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/login.self-d03a5178201d7296785eb0b43367b9dd158e90496cf0a86437e18cd91aa492ff.css?body=1" for 173.219.167.170 at 2019-11-17 19:54:50 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-17 19:54:50 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-17 19:55:27 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.5ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 1880ms (Views: 1875.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/login.self-7d440733709d6b890f58f0d00be9b7c4a38604808ba78dc08ec0a9ac7c683ce7.css?body=1" for 173.219.167.170 at 2019-11-17 19:55:29 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-17 19:55:33 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-17 19:55:33 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
