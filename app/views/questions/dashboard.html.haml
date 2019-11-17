@@ -1,0 +1,46 @@
+.container
+%br
+    %h1 Welcome to DashBoard
+    %br
+    .card
+        .card-header
+            %h4{:class=>"card-title"} Patient Profile
+        .card-body
+            %h5 John Doe
+    %br    
+    .card
+        .card-header
+            %h4{:class=>"card-title"} Stage of Readiness
+        .card-body
+            %table.table.table-bordered
+                %thead
+                    %tr
+                        %th{:scope => "col"} #
+                        %th{:scope => "col"} First
+                        %th{:scope => "col"} Last
+                        %th{:scope => "col"} Handle
+                %tbody
+                    %tr
+                        %th{:scope => "row"} 1
+                        %td Mark
+                        %td Otto
+                        %td @mdo
+                    %tr
+                        %th{:scope => "row"} 2
+                        %td Jacob
+                        %td Thornton
+                        %td @fat
+                    %tr
+                        %th{:scope => "row"} 3
+                        %td{:colspan => "2"} Larry the Bird
+                        %td @twitter
+
+    .card
+        .card-header
+            %h4{:class=>"card-title"} Counselling Points
+        .card-body
+            %p 1)Take Fees First
+            %p 2)Pretend to care
+            %p 3)Advise costly tests
+            %p 4)Prescribe  a costly dummy pill
+            

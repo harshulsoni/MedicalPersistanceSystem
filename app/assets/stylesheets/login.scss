@@ -10,11 +10,27 @@
 }
 
 .bg-image {
-  background-image: url("../../assets/images/hero.jpg");
+  background-image:  linear-gradient(
+      rgba(128, 128, 128, 0.8), 
+      rgba(128, 128, 128, 0.8)
+    ), url("hero.jpg");
   background-size: cover;
   background-position: center;
+  
 }
+// .background {
+//     background:url('../img/bg/diagonalnoise.png');
+//     position: relative;
+// }
 
+.layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 .login-heading {
   font-weight: 300;
 }
@@ -38,7 +54,10 @@
   height: auto;
   border-radius: 2rem;
 }
-
+h3,a{
+  
+  color:white;
+}
 .form-label-group>label {
   position: absolute;
   top: 0;
