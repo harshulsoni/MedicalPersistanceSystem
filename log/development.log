@@ -5863,3 +5863,166 @@ Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-17 19:55:33 +0000
 Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-20 01:00:11 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 482ms (Views: 473.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.self-77735d2b7cb09d33e9cda6af7de017348832f4174cdfccc7eb56bdfeeb144dc6.css?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-31c8471fd659d553f37d246a00df6c93df63521ae90b0cd935ae6791ccad72b9.css?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-22d1b26530447aa7524c31e99c0ddfded97be8a1eaf4dab75f6b4a3f4112bc4d.css?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-7d440733709d6b890f58f0d00be9b7c4a38604808ba78dc08ec0a9ac7c683ce7.css?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-70e1b2b78096eb80eb35ebac513e7a8007033ee3e881919cfdca4ece7779cffd.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/questions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-a1a74291c4c48f2f663a025ffa678498d6448b849a2d74c0ca25e39ee192c0a7.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-91405a85c7ea7ffc2407472f08a86cd29ba078b4e18f962931a4cf3270a7ba4d.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery3.self-e200ee796ef24add7054280d843a80de75392557bb4248241e870fac0914c0c1.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-20 01:00:13 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-20 01:00:33 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (68.7ms)
+  Rendered questions/new.html.haml within layouts/application (76.9ms)
+Completed 200 OK in 138ms (Views: 103.6ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/questions/new" for 173.219.167.170 at 2019-11-20 01:01:03 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#new as HTML
+  Rendered questions/_form.html.haml (3.6ms)
+  Rendered questions/new.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 29ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/questions" for 173.219.167.170 at 2019-11-20 01:01:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qJeQ0xZmOxeQDew0dpkI5LTHwSYb9iD2fzq8c3iXju6jjDlz5tSquXKr6qvvrqgHQEujGm4a+50TBKsy8q61yw==", "question"=>{"name"=>"", "mrn"=>"", "age"=>"", "question51"=>"", "question52"=>"", "question53"=>"", "question54"=>"", "question55"=>"", "question56"=>""}, "commit"=>"Submit Response"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "questions" ("name", "mrn", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", ""], ["mrn", ""], ["created_at", "2019-11-20 01:01:08.274084"], ["updated_at", "2019-11-20 01:01:08.274084"]]
+  [1m[35m (0.8ms)[0m  COMMIT
+Redirected to https://d18ed84fabc04e6a8bad5e746a977476.vfs.cloud9.us-east-2.amazonaws.com/questions/15
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/questions/15" for 173.219.167.170 at 2019-11-20 01:01:08 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered questions/show.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 33ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/15/edit" for 173.219.167.170 at 2019-11-20 01:01:15 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 15]]
+  Rendered questions/_form.html.haml (3.6ms)
+  Rendered questions/edit.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-20 01:01:22 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-20 01:01:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-20 01:01:28 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-20 01:01:56 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"
+  Rendered questions/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 173.219.167.170 at 2019-11-20 01:02:07 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#dashboard as HTML
+  Rendered questions/dashboard.html.haml within layouts/application (11.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 173.219.167.170 at 2019-11-20 01:04:48 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 173.219.167.170 at 2019-11-20 01:05:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#login as HTML
+  Rendered questions/login.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/medical.jpg" for 173.219.167.170 at 2019-11-20 01:05:49 +0000
+Cannot render console from 173.219.167.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
