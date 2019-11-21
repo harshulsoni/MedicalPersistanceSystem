@@ -10,23 +10,51 @@
   .field
     = f.label :name,'Please enter your full name:'
     %br/
-    = f.text_field :name
+    = f.text_field :name,:required => true
   .field
     = f.label :mrn,'Please enter your Medical Record Number'
     %br/
-    = f.text_field :mrn
+    = f.text_field :mrn,:required => true
   .field
-    = f.label :age, 'Please enter your age:'
+    = f.label :age, 'Please enter your age (in years):'
     %br/
-    = f.number_field :age
+    = f.number_field :age,:required => true
   .field
-    = f.label :question2,'Compared to women your age, how would you rate your own risk of fraturing or breaking a bone?'
+    = f.label :question2,'Compared to women your age, how would you rate your own risk of fraturing or breaking a bone?',:required => true
     %br/
-    = f.number_field :question2
+    = f.radio_button :question2, 1
+    = f.label :question2, 'Much lower', :value => 1
+    %br/
+    = f.radio_button :question2, 2
+    = f.label :question2, 'A little lower', :value => 2
+    %br/
+    = f.radio_button :question2, 3
+    = f.label :question2, 'About the same', :value => 3
+    %br/
+    = f.radio_button :question2, 4
+    = f.label :question2, 'A little higher', :value => 4
+    %br/
+    = f.radio_button :question2, 5
+    = f.label :question2, 'Much higher', :value => 5
+    %br/
   .field
     = f.label :question3,'How confident are you filling out medical forms by yourself?'
     %br/
-    = f.number_field :question3
+    = f.radio_button :question3, 1
+    = f.label :question3, 'Not at all', :value => 1
+    %br/
+    = f.radio_button :question3, 2
+    = f.label :question3, 'A little bit', :value => 2
+    %br/
+    = f.radio_button :question3, 3
+    = f.label :question3, 'Somewhat', :value => 3
+    %br/
+    = f.radio_button :question3, 4
+    = f.label :question3, 'Quite a bit', :value => 4
+    %br/
+    = f.radio_button :question3, 5
+    = f.label :question3, 'Extremely', :value => 5
+    %br/
   .field
     = f.label :question4,'People get information about osteoporosis medication from different sources. Have you recieved information about possible osteoporosis medication in past year?'
     %br/
@@ -39,27 +67,111 @@
     %br/
     = f.label :question51,'There are better ways for me to treat my osteoporosis besides medication.'
     %br/
-    = f.select :question51, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question51, 1
+    = f.label :question51, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question51, 2
+    = f.label :question51, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question51, 3
+    = f.label :question51, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question51, 4
+    = f.label :question51, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question51, 5
+    = f.label :question51, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question52, 'Doctors are too quick to prescribe medication.'
     %br/
-    = f.select :question52, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question52, 1
+    = f.label :question52, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question52, 2
+    = f.label :question52, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question52, 3
+    = f.label :question52, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question52, 4
+    = f.label :question52, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question52, 5
+    = f.label :question52, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question53, 'Doctors of often give medication when advice would be better'
     %br/
-    = f.select :question53, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question53, 1
+    = f.label :question53, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question53, 2
+    = f.label :question53, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question53, 3
+    = f.label :question53, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question53, 4
+    = f.label :question53, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question53, 5
+    = f.label :question53, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question54, 'I can take care of my osteoporosis without medication.'
     %br/
-    = f.select :question54, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question54, 1
+    = f.label :question54, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question54, 2
+    = f.label :question54, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question54, 3
+    = f.label :question54, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question54, 4
+    = f.label :question54, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question54, 5
+    = f.label :question54, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question55, 'Medications often cause more problems than they solve.'
     %br/
-    = f.select :question55, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question55, 1
+    = f.label :question55, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question55, 2
+    = f.label :question55, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question55, 3
+    = f.label :question55, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question55, 4
+    = f.label :question55, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question55, 5
+    = f.label :question55, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question56, 'I prefer not to take medication'
     %br/
-    = f.select :question56, [['Strongly Disagree',1],['Disagree',2],['Neutral',3],['Agree',4],['Strongly Agree',5]]
+    = f.radio_button :question56, 1
+    = f.label :question56, 'Strongly Disagree', :value => 1
+    %br/
+    = f.radio_button :question56, 2
+    = f.label :question56, 'Disagree', :value => 2
+    %br/
+    = f.radio_button :question56, 3
+    = f.label :question56, 'Neutral', :value => 3
+    %br/
+    = f.radio_button :question56, 4
+    = f.label :question56, 'Agree', :value => 4
+    %br/
+    = f.radio_button :question56, 5
+    = f.label :question56, 'Striongly Agree', :value => 5
+    %br/
   .field
     = f.label :question6, 'Please choose the one statement that best reflects your feelings about recieving medicines now.'
     %br/
@@ -76,10 +188,10 @@
     = f.label :question6, 'I am currently considering the use of osteoporosis medication, but I have not made up my mind.', :value => 4
     %br/
     = f.radio_button :question6, 5
-    = f.label :question6, 'I have decided to use osteoporosis medication, but I have not yet started taking anything', :value => 5
+    = f.label :question6, 'I have decided to use osteoporosis medication, but I have not yet started taking anything.', :value => 5
     %br/
     = f.radio_button :question6, 6
-    = f.label :question6, 'I have started medication for osteoporosis', :value => 6
+    = f.label :question6, 'I have started medication for osteoporosis.', :value => 6
     %br/
     
   .actions

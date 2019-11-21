@@ -3,19 +3,10 @@
 %table
   %thead
     %tr
-      %th Name :
+      %th Name
       %th MRN
       %th Age
-      %th Question2
-      %th Question3
-      %th Question4
-      %th Question51
-      %th Question52
-      %th Question53
-      %th Question54
-      %th Question55
-      %th Question56
-      %th Question6
+      
       %th{:colspan => "3"}
   %tbody
     - @questions.each do |question|
@@ -23,16 +14,6 @@
         %td= question.name
         %td= question.mrn
         %td= question.age
-        %td= question.question2
-        %td= question.question3
-        %td= question.question4
-        %td= question.question51
-        %td= question.question52
-        %td= question.question53
-        %td= question.question54
-        %td= question.question55
-        %td= question.question56
-        %td= question.question6
         %td= link_to 'Show', question
         %td= link_to 'Edit', edit_question_path(question)
         %td= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }
