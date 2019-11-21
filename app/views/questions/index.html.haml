@@ -1,6 +1,6 @@
 %p#notice= notice
 %h1 Listing Questions
-%table
+%table.table.table-striped
   %thead
     %tr
       %th Name
@@ -20,7 +20,7 @@
   %tbody
     - @questions.each do |question|
       %tr
-        %td= question.name
+        %td= link_to question.name,dashboard_path
         %td= question.mrn
         %td= question.age
         %td= question.question2
@@ -37,4 +37,4 @@
         %td= link_to 'Edit', edit_question_path(question)
         %td= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
-= link_to 'New Question', new_question_path
+= link_to 'Bach to Home Page', root_path, :class => "btn btn-outline-success",:id => "center"

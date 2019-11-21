@@ -7,57 +7,143 @@
       %ul
         - @question.errors.full_messages.each do |message|
           %li= message
-  .field
+  .form-group
     = f.label :name
     %br/
-    = f.text_field :name
-  .field
+    = f.text_field :name,:class => "form-control"
+    
+  .form-group
     = f.label :mrn
     %br/
-    = f.text_area :mrn
-  .field
+    = f.text_area :mrn,:class => "form-control"
+    
+  .form-group
     = f.label :age
     %br/
-    = f.number_field :age
-  .field
+    = f.number_field :age,:class => "form-control"
+  .form-group
     = f.label :question2
     %br/
-    = f.number_field :question2
-  .field
+    // = f.number_field :question2,:class => "form-control"
+  .radio
+    %label
+      %input{name: "quest2", type: "radio", value: "1"}
+      Much Lower   
+  .radio
+    %label
+      %input{name: "quest2", type: "radio", value: "2"}
+      A Little Lower
+  .radio
+    %label
+      %input{name: "quest2", type: "radio", value: "3"}
+      About the same 
+  .radio
+    %label
+      %input{name: "quest2", type: "radio", value: "4"}
+      A Little Higher
+  .radio
+    %label
+      %input{name: "quest2", type: "radio", value: "5"}
+      Much Higher
+
+  .form-group
     = f.label :question3
     %br/
-    = f.number_field :question3
-  .field
+    // = f.number_field :question3,:class => "form-control"
+  .radio
+    %label
+      %input{name: "quest3", type: "radio", value: "1"}
+      Not at all
+  .radio
+    %label
+      %input{name: "quest3", type: "radio", value: "2"}
+      A Little Bit
+  .radio
+    %label
+      %input{name: "quest3", type: "radio", value: "3"}
+      Somewhat
+  .radio
+    %label
+      %input{name: "quest3", type: "radio", value: "4"}
+      Quite a Bit
+  .radio
+    %label
+      %input{name: "quest3", type: "radio", value: "5"}
+      Extremely
+
+  .form-group
     = f.label :question4
     %br/
-    = f.check_box :question4
-  .field
+    // = f.check_box :question4
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "1"}
+      Yes
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "2"}
+      No
+   
+  .form-group
     = f.label :question51
     %br/
-    = f.number_field :question51
-  .field
+    = f.number_field :question51,:class => "form-control"
+  .form-group
     = f.label :question52
     %br/
-    = f.number_field :question52
-  .field
+    = f.number_field :question52,:class => "form-control"
+  .form-group
     = f.label :question53
     %br/
-    = f.number_field :question53
-  .field
+    = f.number_field :question53,:class => "form-control"
+  .form-group
     = f.label :question54
     %br/
-    = f.number_field :question54
-  .field
+    = f.number_field :question54,:class => "form-control"
+  .form-group
     = f.label :question55
     %br/
-    = f.number_field :question55
-  .field
+    = f.number_field :question55,:class => "form-control"
+  .form-group
     = f.label :question56
     %br/
-    = f.number_field :question56
-  .field
+    = f.number_field :question56,:class => "form-control"
+    
+  .form-group
     = f.label :question6
     %br/
-    = f.number_field :question6
-  .actions
-    = f.submit
+    // = f.number_field :question6,:class => "form-control"
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "1"}
+      I do not think I need treatment for osteoporosis    
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "2"}
+      I am aware that there are treatments available for my osteoporosis, but I have never thought seriously about using these medications.
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "3"}
+      I have considered of using or have prevously used osteoporosis medication, but I have decided against taking it     
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "4"}
+      I am currently considering the use of osteoporosis medication, but I have not made up my mind. 
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "5"}
+      I have decided to use osteoporosis medication, but I have not yet started taking anything  
+  .radio
+    %label
+      %input{name: "quest6", type: "radio", value: "6"}
+      I have started taking medication for osteoporosis    
+  
+    %br/  
+    %br/
+    
+  .form-group#center
+    
+    
+    // = link_to 'Go Back', root_path, :class => "btn btn-danger"
+    
+    = f.submit  'Submit Response', :class => "btn btn-success"
