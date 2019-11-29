@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   resources :questions
+  get '/' => 'questions#login'
+  get '/dashboard' => 'questions#dashboard'
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,7 +58,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root 'questions#index'
+  # root 'questions#index'
+ root 'questions#login'
+
   #root to: "controller#action"
   #root questions_path
 end
