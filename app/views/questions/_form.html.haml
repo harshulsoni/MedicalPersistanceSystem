@@ -11,131 +11,238 @@
     = f.label :name,'Please enter your full name:'
     %br/
     = f.text_field :name,:class => "form-control",:required => true
-    
+  %br/
   .form-group
     = f.label :mrn,'Please enter your Medical Record Number'
     %br/
     = f.text_area :mrn,:class => "form-control",:required => true
-    
+  %br/  
   .form-group
     = f.label :age, 'Please enter your age (in years):'
     %br/
     = f.number_field :age,:class => "form-control",:required => true
+  %br/
   .form-group
     = f.label :question2,'Compared to women your age, how would you rate your own risk of fracturing or breaking a bone?'
-    %br/
-    // = f.number_field :question2,:class => "form-control"
+  .radio 
+    %label
+      = f.radio_button :question2, 1
+      Much Lower     
   .radio
     %label
-      %input{name: "quest2", type: "radio", value: "1"}
-      Much Lower   
-  .radio
-    %label
-      %input{name: "quest2", type: "radio", value: "2"}
+      = f.radio_button :question2, 2
       A Little Lower
   .radio
     %label
-      %input{name: "quest2", type: "radio", value: "3"}
+      = f.radio_button :question2, 3
       About the same 
   .radio
     %label
-      %input{name: "quest2", type: "radio", value: "4"}
+      = f.radio_button :question2, 4
       A Little Higher
   .radio
     %label
-      %input{name: "quest2", type: "radio", value: "5"}
+      = f.radio_button :question2, 5
       Much Higher
-
+  %br/
   .form-group
     = f.label :question3,'How confident are you filling out medical forms by yourself?'
-    %br/
-    // = f.number_field :question3,:class => "form-control"
   .radio
     %label
-      %input{name: "quest3", type: "radio", value: "1"}
+      = f.radio_button :question3, 1
       Not at all
   .radio
     %label
-      %input{name: "quest3", type: "radio", value: "2"}
+      = f.radio_button :question3, 2
       A Little Bit
   .radio
     %label
-      %input{name: "quest3", type: "radio", value: "3"}
+      = f.radio_button :question3, 3
       Somewhat
   .radio
     %label
-      %input{name: "quest3", type: "radio", value: "4"}
+      = f.radio_button :question3, 4
       Quite a Bit
   .radio
     %label
-      %input{name: "quest3", type: "radio", value: "5"}
+      = f.radio_button :question3, 5
       Extremely
-
+  %br/
   .form-group
     = f.label :question4,'People get information about osteoporosis medication from different sources. Have you recieved information about possible osteoporosis medication in past year?'
-    %br/
-    // = f.check_box :question4
   .radio
     %label
-      %input{name: "quest4", type: "radio", value: "1"}
+      = f.radio_button :question4, true
       Yes
   .radio
     %label
-      %input{name: "quest4", type: "radio", value: "2"}
+      = f.radio_button :question4, false
       No
-   
+  %br/ 
   .form-group
     = f.label :question51,'There are better ways for me to treat my osteoporosis besides medication.'
-    %br/
-    = f.number_field :question51,:class => "form-control"
-  .form-group
-    = f.label :question52, 'Doctors are too quick to prescribe medication.'
-    %br/
-    = f.number_field :question52,:class => "form-control"
-  .form-group
-    = f.label :question53, 'Doctors of often give medication when advice would be better'
-    %br/
-    = f.number_field :question53,:class => "form-control"
-  .form-group
-    = f.label :question54, 'I can take care of my osteoporosis without medication.'
-    %br/
-    = f.number_field :question54,:class => "form-control"
-  .form-group
-    = f.label :question55, 'Medications often cause more problems than they solve.'
-    %br/
-    = f.number_field :question55,:class => "form-control"
-  .form-group
-    = f.label :question56, 'I prefer not to take medication'
-    %br/
-    = f.number_field :question56,:class => "form-control"
-    
-  .form-group
-    = f.label :question6
-    %br/
-    // = f.number_field :question6,:class => "form-control"
   .radio
     %label
-      %input {name: "quest6", type: "radio", value: "1"}
+      = f.radio_button :question51, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question51, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question51, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question51, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question51, 5
+      Strongly Agree
+  %br/
+  .form-group
+    = f.label :question52, 'Doctors are too quick to prescribe medication.'
+  .radio
+    %label
+      = f.radio_button :question51, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question52, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question52, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question52, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question52, 5
+      Strongly Agree
+  %br/
+  .form-group
+    = f.label :question53, 'Doctors of often give medication when advice would be better'
+  .radio
+    %label
+      = f.radio_button :question53, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question53, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question53, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question53, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question53, 5
+      Strongly Agree
+  %br/
+  .form-group
+    = f.label :question54, 'I can take care of my osteoporosis without medication.'
+  .radio
+    %label
+      = f.radio_button :question54, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question54, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question54, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question54, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question54, 5
+      Strongly Agree
+  %br/
+  .form-group
+    = f.label :question55, 'Medications often cause more problems than they solve.'
+  .radio
+    %label
+      = f.radio_button :question55, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question55, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question55, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question55, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question55, 5
+      Strongly Agree
+  %br/
+  .form-group
+    = f.label :question56, 'I prefer not to take medication'
+  .radio
+    %label
+      = f.radio_button :question56, 1
+      Strongly Disgree
+  .radio
+    %label
+      = f.radio_button :question56, 2
+      Disagree
+  .radio
+    %label
+      = f.radio_button :question56, 3
+      Neutral
+  .radio
+    %label
+      = f.radio_button :question56, 4
+      Agree
+  .radio
+    %label
+      = f.radio_button :question56, 5
+      Strongly Agree
+  %br/
+    
+  .form-group
+    = f.label :question6, "Please choose the one statement that best reflects your feelings about recieving medicines now"
+  .radio
+    %label
+      = f.radio_button :question6, 1
       I do not think I need treatment for osteoporosis    
   .radio
     %label
-      %input{name: "quest6", type: "radio", value: "2"}
+      = f.radio_button :question6, 2
       I am aware that there are treatments available for my osteoporosis, but I have never thought seriously about using these medications.
   .radio
     %label
-      %input{name: "quest6", type: "radio", value: "3"}
+      = f.radio_button :question6, 3
       I have considered of using or have prevously used osteoporosis medication, but I have decided against taking it     
   .radio
     %label
-      %input{name: "quest6", type: "radio", value: "4"}
+      = f.radio_button :question6, 4
       I am currently considering the use of osteoporosis medication, but I have not made up my mind. 
   .radio
     %label
-      %input{name: "quest6", type: "radio", value: "5"}
+      = f.radio_button :question6, 5
       I have decided to use osteoporosis medication, but I have not yet started taking anything  
   .radio
     %label
-      %input{name: "quest6", type: "radio", value: "6"}
+      = f.radio_button :question6, 6
       I have started taking medication for osteoporosis    
   
     %br/  
