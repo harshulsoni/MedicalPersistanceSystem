@@ -4,83 +4,46 @@
   %p#notice= notice
   %p
     %strong Name:
-    = @question.name
+  = @question.name
   %p
-    %strong MRN:
-    = @question.mrn
+    %strong Mrn:
+  = @question.mrn
   %p
     %strong Age:
-    = @question.age
+  = @question.age
   %p
-    %strong Compared to women your age, how would you rate your own risk of fraturing or breaking a bone?:
-    = ("Much lower" if @question.question2==1)
-    = ("A little lower" if @question.question2==2)
-    = ("About the same" if @question.question2==3)
-    = ("A little higher" if @question.question2==4)
-    = ("Much higher" if @question.question2==5)
+    %strong Question2:
+  = @question.question2
   %p
-    %strong How confident are you filling out medical forms by yourself?:
-    = ("Not at all" if @question.question3==1)
-    = ("A little bit" if @question.question3==2)
-    = ("Somewhat" if @question.question3==3)
-    = ("Quite a bit" if @question.question3==4)
-    = ("Extremely" if @question.question3==5)
+    %strong Question3:
+  = @question.question3
   %p
-    %strong People get information about osteoporosis medication from different sources. Have you recieved information about possible osteoporosis medication in past year?:
-    = ("No" if @question.question4==false)
-    = ("Yes" if @question.question4==true)
+    %strong Question4: 
+  = @question.question4
   %p
-    %strong There are better ways for me to treat my osteoporosis besides medication:
-    = ("Strongly Disagree" if @question.question51==1)
-    = ("Disagree" if @question.question51==2)
-    = ("Neutral" if @question.question51==3)
-    = ("Agree" if @question.question51==4)
-    = ("Strongly Agree" if @question.question51==5)
+    %strong Question51:
+  = @question.question51
   %p
-    %strong Doctors are too quick to prescribe medication:
-    = ("Strongly Disagree" if @question.question52==1)
-    = ("Disagree" if @question.question52==2)
-    = ("Neutral" if @question.question52==3)
-    = ("Agree" if @question.question52==4)
-    = ("Strongly Agree" if @question.question52==5)
+    %strong Question52:
+  = @question.question52
   %p
-    %strong Doctors of often give medication when advice would be better:
-    = ("Strongly Disagree" if @question.question53==1)
-    = ("Disagree" if @question.question53==2)
-    = ("Neutral" if @question.question53==3)
-    = ("Agree" if @question.question53==4)
-    = ("Strongly Agree" if @question.question53==5)
+    %strong Question53:
+  = @question.question53
   %p
-    %strong I can take care of my osteoporosis without medication:
-    = ("Strongly Disagree" if @question.question54==1)
-    = ("Disagree" if @question.question54==2)
-    = ("Neutral" if @question.question54==3)
-    = ("Agree" if @question.question54==4)
-    = ("Strongly Agree" if @question.question54==5)
+    %strong Question54:
+  = @question.question54
   %p
-    %strong Medications often cause more problems than they solve:
-    = ("Strongly Disagree" if @question.question55==1)
-    = ("Disagree" if @question.question55==2)
-    = ("Neutral" if @question.question55==3)
-    = ("Agree" if @question.question55==4)
-    = ("Strongly Agree" if @question.question55==5)
+    %strong Question55:
+  = @question.question55
   %p
-    %strong I prefer not to take medication:
-    = ("Strongly Disagree" if @question.question56==1)
-    = ("Disagree" if @question.question56==2)
-    = ("Neutral" if @question.question56==3)
-    = ("Agree" if @question.question56==4)
-    = ("Strongly Agree" if @question.question56==5)
+    %strong Question56:
+  = @question.question56
   %p
-    %strong Please choose the one statement that best reflects your feelings about recieving medicines now:
-    = ("I do not think I need treatment for osteoporosis" if @question.question6==1)
-    = ("I am aware that there are treatments available for my osteoporosis, but I have never thought seriously about using these medications" if @question.question6==2)
-    = ("I have considered using or have previously used osteoporosis medication, but I have decided against taking it" if @question.question6==3)
-    = ("I am currently considering the use of osteoporosis medication, but I have not made up my mind" if @question.question6==4)
-    = ("I have decided to use osteoporosis medication, but I have not yet started taking anything" if @question.question6==5)
-    = ("I have started medication for osteoporosis" if @question.question6==5)
+    %strong Question6:
+  = @question.question6
   
-  
-= link_to '  Submit ', root_path, :class => "btn btn-danger"
-%span#pad
-= link_to 'Edit Response', edit_question_path(@question),:class => "btn btn-secondary"
+  = link_to '  Go  Back ', questions_path, :class => "btn btn-danger"
+  %span#pad
+  = link_to 'Edit Response', edit_question_path(@question),:class => "btn btn-secondary"
+
+

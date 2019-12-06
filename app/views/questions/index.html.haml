@@ -1,12 +1,21 @@
 %p#notice= notice
-%h1 Survey
+%h1 Listing Questions
 %table.table.table-striped
   %thead
     %tr
       %th Name
-      %th MRN
+      %th Mrn
       %th Age
-      
+      %th Question2
+      %th Question3
+      %th Question4
+      %th Question51
+      %th Question52
+      %th Question53
+      %th Question54
+      %th Question55
+      %th Question56
+      %th Question6
       %th{:colspan => "3"}
   %tbody
     - @questions.each do |question|
@@ -14,9 +23,18 @@
         %td= link_to question.name,dashboard_path
         %td= question.mrn
         %td= question.age
+        %td= question.question2
+        %td= question.question3
+        %td= question.question4
+        %td= question.question51
+        %td= question.question52
+        %td= question.question53
+        %td= question.question54
+        %td= question.question55
+        %td= question.question56
+        %td= question.question6
         %td= link_to 'Show', question
         %td= link_to 'Edit', edit_question_path(question)
         %td= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }
 %br/
-= link_to 'New Response', new_question_path
-= link_to 'Back to Home Page', root_path, :class => "btn btn-outline-success",:id => "center"
+= link_to 'Bach to Home Page', root_path, :class => "btn btn-outline-success",:id => "center"
