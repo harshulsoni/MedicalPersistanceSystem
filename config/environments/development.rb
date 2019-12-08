@@ -58,26 +58,26 @@ Rails.application.configure do
   #   :password => "df19226570f40f04fc15dfbd15dfc86f-f7910792-230dc6d2"
   # }
   
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-    api_key: '3ecf5c4800b261f3ea96af3ac0e70694-f7910792-dc447430',
-    domain: 'sandboxed275fb3850c475fac570f8421b31bec.mailgun.org'
-  }
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  # config.action_mailer.delivery_method = :mailgun
+  # config.action_mailer.mailgun_settings = {
+  #   api_key: '3ecf5c4800b261f3ea96af3ac0e70694-f7910792-dc447430',
+  #   domain: 'sandboxed275fb3850c475fac570f8421b31bec.mailgun.org'
+  # }
   # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  # config.action_mailer.perform_deliveries = true
-  # config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.default :charset => "utf-8"
-  # config.action_mailer.raise_delivery_errors = false
-  # config.action_mailer.default_options = { from: "harshulsoni95@gmail.com" }
-  # config.action_mailer.smtp_settings = {
-  #   address: "smtp.gmail.com",
-  #   port: 587,
-  #   authentication: "plain",
-  #   enable_starttls_auto: true,
-  #   user_name: ENV['GMAIL_USERNAME'],
-  #   password: ENV['GMAIL_PASSWORD'],
-  #   openssl_verify_mode: 'none'
-  #   }
-  #   #config.action_mailer.perform_caching = false
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default_options = { from: ENV['GMAIL_USERNAME'] }
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV['GMAIL_USERNAME'],
+    password: ENV['GMAIL_PASSWORD'],
+    openssl_verify_mode: 'none'
+  }
+    #config.action_mailer.perform_caching = false
 end
