@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :questions
   get '/' => 'questions#login'
@@ -61,6 +62,8 @@ Rails.application.routes.draw do
   #   end
   #root 'questions#login'
   root 'questions#index'
+  get '/users/sign_out/' =>'sessions#destroy', :as => :logout
+  #logout 'sessions#destroy'
 
   #root to: "controller#action"
   #root questions_path

@@ -16,6 +16,9 @@ class QuestionsController < ApplicationController
   # GET /questions.json
  
   def index
+    if current_user.admin == true
+      redirect_to '/admin'
+    end
     @questions = Question.all
   end
 
