@@ -6,7 +6,31 @@ class QuestionsController < ApplicationController
   end
  
   def dashboard
-    
+    # puts params
+    # @question = Question.find(params[:format].to_i)
+    # puts @question.name
+    @patient = Question.find(params[:format].to_i)
+    puts(@patient.age)
+    # @User
+    @User_age = @patient.age >= 70 ? "+" : "-"
+    puts(@User_age)
+    @User_risk = (@patient.question2 == 4 or @patient.question2 == 5) ? "+" : "-"
+    @User_literacy = (@patient.question3 == 4 or @patient.question3 == 5) ? "-" : "+"
+    @User_priorinfo = @patient.question4 == true ? "+" : "-"
+    trust_score = (@patient.question51 + @patient.question52 + \
+                    @patient.question53 + @patient.question54 + \
+                    @patient.question55 + @patient.question56) / 6
+    # opinion_score = opinion_total / 6
+    @User_trust = trust_score > 3.17 ? "-" : "+"
+    if @patient.question6 == 1
+      @User_stage = 1
+    elsif @patient.question6 == 2 or @patient.question6 == 3
+      @User_stage = 2
+    elsif @patient.question6 == 4 or @patient.question6 == 5
+      @User_stage = 3
+    elsif @patient.question6 == 6
+      @User_stage = 4
+    end 
   end
   
   # GET /questions

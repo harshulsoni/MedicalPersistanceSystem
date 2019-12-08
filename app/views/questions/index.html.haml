@@ -11,7 +11,7 @@
   %tbody
     - @questions.each do |question|
       %tr
-        %td= link_to question.name,dashboard_path
+        %td= link_to question.name, dashboard_path(question)
         %td= question.mrn
         %td= question.age
         %td= link_to 'Show', question

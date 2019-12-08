@@ -9,11 +9,11 @@
         .card-body
             .row
                 .col-8
-                    %h6 Name : John Doe
-                    %h6 Age in Years : 23
-                    %h6 MRN : 123456789
+                    %h6 Name : #{@patient.name}
+                    %h6 Age in Years : #{@patient.age}
+                    %h6 MRN : #{@patient.mrn}
                 .col-4
-                    %h6 Date : 12/12/2012
+                    %h6 Date : #{@patient.created_at}
                     %br
                     .dropdown
                         %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
@@ -42,34 +42,74 @@
                 %tbody
                     %tr
                         %th{:scope => "row"} Age>=70y
-                        %td +/-
-                        %td +/-
-                        %td +/-
-                        %td +/-
+                        %td
+                            - if @User_stage == 1
+                                = @User_age
+                        %td
+                            - if @User_stage == 2
+                                = @User_age
+                        %td
+                            - if @User_stage == 3
+                                = @User_age
+                        %td
+                            - if @User_stage == 4
+                                = @User_age
                     %tr
                         %th{:scope => "row"} High Perceived Fx Risk
-                        %td +/-
-                        %td +/-
-                        %td +/-
-                        %td +/-
+                        %td
+                            - if @User_stage == 1
+                                = @User_risk
+                        %td
+                            - if @User_stage == 2
+                                = @User_risk
+                        %td
+                            - if @User_stage == 3
+                                = @User_risk
+                        %td
+                            - if @User_stage == 4
+                                = @User_risk
                     %tr
                         %th{:scope => "row"} Adequate Literacy
-                        %td +/-
-                        %td +/-
-                        %td +/-
-                        %td +/-
+                        %td
+                            - if @User_stage == 1
+                                = @User_literacy
+                        %td
+                            - if @User_stage == 2
+                                = @User_literacy
+                        %td
+                            - if @User_stage == 3
+                                = @User_literacy
+                        %td
+                            - if @User_stage == 4
+                                = @User_literacy
                     %tr
                         %th{:scope => "row"} High Trust for Medication
-                        %td +/-
-                        %td +/- 
-                        %td +/-
-                        %td +/-
+                        %td
+                            - if @User_stage == 1
+                                = @User_trust
+                        %td
+                            - if @User_stage == 2
+                                = @User_trust
+                        %td
+                            - if @User_stage == 3
+                                = @User_trust
+                        %td
+                            - if @User_stage == 4
+                                = @User_trust
                     %tr
                         %th{:scope => "row"} Receipt for Medication Information
-                        %td +/-
-                        %td +/-
-                        %td +/-
-                        %td +/-
+                        %td
+                            - if @User_stage == 1
+                                = @User_priorinfo
+                        %td
+                            - if @User_stage == 2
+                                = @User_priorinfo
+                        %td
+                            - if @User_stage == 3
+                                = @User_priorinfo
+                        %td
+                            - if @User_stage == 4
+                                = @User_priorinfo
     %br                    
     .card
         .card-header
