@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, :skip => [:registrations] 
   resources :questions
-  get '/' => 'questions#login'
+  #get '/' => 'questions#login'
   get '/dashboard' => 'questions#dashboard'
 
   
@@ -61,7 +63,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   #root 'questions#login'
-  root 'questions#index'
+  #root 'questions#index'
+  root 'home#index'
   get '/users/sign_out/' =>'sessions#destroy', :as => :logout
   #logout 'sessions#destroy'
 
