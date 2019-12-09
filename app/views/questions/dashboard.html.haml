@@ -115,11 +115,22 @@
         .card-header
             %h5{:class=>"card-title"} Counselling Points
         .card-body
-            %p 1)Take Fees First
-            %p 2)Pretend to care
-            %p 3)Advise costly tests
-            %p 4)Prescribe  a costly dummy pill
-            
+            %strong Age
+            - @counsel_points[@stage]['age'][@age_p].each_with_index do |cp, index|
+                %p #{index+1}) #{cp}
+            %strong Risk
+            - @counsel_points[@stage]['risk'][@risk_p].each_with_index do |cp, index|
+                %p #{index+1}) #{cp}
+            %strong Literacy
+            - @counsel_points[@stage]['literacy'][@literacy_p].each_with_index do |cp, index|
+                %p #{index+1}) #{cp}
+            %strong Trust
+            - @counsel_points[@stage]['trust'][@trust_p].each_with_index do |cp, index|
+                %p #{index+1}) #{cp}
+            %strong Medication Information
+            - @counsel_points[@stage]['info'][@info_p].each_with_index do |cp, index|
+                %p #{index+1}) #{cp}
+
     %br
     .container-footer
         = link_to 'Back to List', questions_path, :class => "dash btn btn-danger btn-lg"
