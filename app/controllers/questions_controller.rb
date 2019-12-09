@@ -2,7 +2,9 @@ class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
   
   def login
-    
+    if current_user
+      redirect_to questions_path
+    end
   end
  
   def dashboard
@@ -92,7 +94,6 @@ class QuestionsController < ApplicationController
   # GET /questions.json
  
   def index
-    @questions = Question.all
   end
 
   # GET /questions/1
