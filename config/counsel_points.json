@@ -1,0 +1,210 @@
+{
+   "stage1": {
+      "age": {
+         "pos": [
+            "Stage1_age_Positive Point1",
+            "Stage1_age_Positive Point2"
+         ],
+         "neg": [
+            "Stage1_age_Negative Point1",
+            "Stage1_age_Negative Point2"
+         ]
+      },
+      "risk": {
+         "pos": [
+            "Stage1_risk_Positive Point1",
+            "Stage1_risk_Positive Point2"
+         ],
+         "neg": [
+            "Stage1_risk_Negative Point1",
+            "Stage1_risk_Negative Point2"
+         ]
+      },
+      "literacy": {
+         "pos": [
+            "Stage1_literacy_Positive Point1",
+            "Stage1_literacy_Positive Point2"
+         ],
+         "neg": [
+            "Stage1_literacy_Negative Point1",
+            "Stage1_literacy_Negative Point2"
+         ]
+      },
+      "trust": {
+         "pos": [
+            "Stage1_trust_Positive Point1",
+            "Stage1_trust_Positive Point2"
+         ],
+         "neg": [
+            "Stage1_trust_Negative Point1",
+            "Stage1_trust_Negative Point2"
+         ]
+      },
+      "info": {
+         "pos": [
+            "Stage1_info_Positive Point1",
+            "Stage1_info_Positive Point2"
+         ],
+         "neg": [
+            "Stage1_info_Negative Point1",
+            "Stage1_info_Negative Point2"
+         ]
+      }
+   },
+   "stage2": {
+      "age": {
+         "pos": [
+            "Stage2_age_Positive Point1",
+            "Stage2_age_Positive Point2"
+         ],
+         "neg": [
+            "Stage2_age_Negative Point1",
+            "Stage2_age_Negative Point2"
+         ]
+      },
+      "risk": {
+         "pos": [
+            "Stage2_risk_Positive Point1",
+            "Stage2_risk_Positive Point2"
+         ],
+         "neg": [
+            "Stage2_risk_Negative Point1",
+            "Stage2_risk_Negative Point2"
+         ]
+      },
+      "literacy": {
+         "pos": [
+            "Stage2_literacy_Positive Point1",
+            "Stage2_literacy_Positive Point2"
+         ],
+         "neg": [
+            "Stage2_literacy_Negative Point1",
+            "Stage2_literacy_Negative Point2"
+         ]
+      },
+      "trust": {
+         "pos": [
+            "Stage2_trust_Positive Point1",
+            "Stage2_trust_Positive Point2"
+         ],
+         "neg": [
+            "Stage2_trust_Negative Point1",
+            "Stage2_trust_Negative Point2"
+         ]
+      },
+      "info": {
+         "pos": [
+            "Stage2_info_Positive Point1",
+            "Stage2_info_Positive Point2"
+         ],
+         "neg": [
+            "Stage2_info_Negative Point1",
+            "Stage2_info_Negative Point2"
+         ]
+      }
+   },
+   "stage3": {
+      "age": {
+         "pos": [
+            "Stage3_age_Positive Point1",
+            "Stage3_age_Positive Point2"
+         ],
+         "neg": [
+            "Stage3_age_Negative Point1",
+            "Stage3_age_Negative Point2"
+         ]
+      },
+      "risk": {
+         "pos": [
+            "Stage3_risk_Positive Point1",
+            "Stage3_risk_Positive Point2"
+         ],
+         "neg": [
+            "Stage3_risk_Negative Point1",
+            "Stage3_risk_Negative Point2"
+         ]
+      },
+      "literacy": {
+         "pos": [
+            "Stage3_literacy_Positive Point1",
+            "Stage3_literacy_Positive Point2"
+         ],
+         "neg": [
+            "Stage3_literacy_Negative Point1",
+            "Stage3_literacy_Negative Point2"
+         ]
+      },
+      "trust": {
+         "pos": [
+            "Stage3_trust_Positive Point1",
+            "Stage3_trust_Positive Point2"
+         ],
+         "neg": [
+            "Stage3_trust_Negative Point1",
+            "Stage3_trust_Negative Point2"
+         ]
+      },
+      "info": {
+         "pos": [
+            "Stage3_info_Positive Point1",
+            "Stage3_info_Positive Point2"
+         ],
+         "neg": [
+            "Stage3_info_Negative Point1",
+            "Stage3_info_Negative Point2"
+         ]
+      }
+   },
+   "stage4": {
+      "age": {
+         "pos": [
+            "Stage4_age_Positive Point1",
+            "Stage4_age_Positive Point2"
+         ],
+         "neg": [
+            "Stage4_age_Negative Point1",
+            "Stage4_age_Negative Point2"
+         ]
+      },
+      "risk": {
+         "pos": [
+            "Stage4_risk_Positive Point1",
+            "Stage4_risk_Positive Point2"
+         ],
+         "neg": [
+            "Stage4_risk_Negative Point1",
+            "Stage4_risk_Negative Point2"
+         ]
+      },
+      "literacy": {
+         "pos": [
+            "Stage4_literacy_Positive Point1",
+            "Stage4_literacy_Positive Point2"
+         ],
+         "neg": [
+            "Stage4_literacy_Negative Point1",
+            "Stage4_literacy_Negative Point2"
+         ]
+      },
+      "trust": {
+         "pos": [
+            "Stage4_trust_Positive Point1",
+            "Stage4_trust_Positive Point2"
+         ],
+         "neg": [
+            "Stage4_trust_Negative Point1",
+            "Stage4_trust_Negative Point2"
+         ]
+      },
+      "info": {
+         "pos": [
+            "Stage4_info_Positive Point1",
+            "Stage4_info_Positive Point2"
+         ],
+         "neg": [
+            "Stage4_info_Negative Point1",
+            "Stage4_info_Negative Point2"
+         ]
+      }
+   }
+}

@@ -8,7 +8,86 @@ class QuestionsController < ApplicationController
   end
  
   def dashboard
+    # Load JSON file with counselling points
+    counsellingPointsFile = File.read('config/counsel_points.json')
+    @counsel_points = JSON.parse(counsellingPointsFile)
     
+    # Get the row id from URL
+    @patient = Question.find(params[:format].to_i)
+    
+    # Readiness stage
+    if @patient.question6 == 1
+      @User_stage = 1
+      @stage = "stage1"
+    elsif @patient.question6 == 2 or @patient.question6 == 3
+      @User_stage = 2
+      @stage = "stage2"
+    elsif @patient.question6 == 4 or @patient.question6 == 5
+      @User_stage = 3
+      @stage = "stage3"
+    elsif @patient.question6 == 6
+      @User_stage = 4
+      @stage = "stage4"
+    end
+    
+    # Age polarity
+    if @patient.age >= 70 
+      @User_age = "+"
+      @age_p = "pos"
+    else
+      @User_age = "-"
+      @age_p = "neg"
+    end
+    
+    # Risk of fracturing polarity
+    if @patient.question2 == 4 or @patient.question2 == 5
+      @User_risk = "-"
+      @risk_p = "neg"
+    else
+      @User_risk = "+"
+      @risk_p = "pos"
+    end 
+    
+    # Adequate Literacy Polarity
+    if @patient.question3 == 4 or @patient.question3 == 5
+      @User_literacy = "-"
+      @literacy_p = "neg"
+    else
+      @User_literacy = "+"
+      @literacy_p = "pos"
+    end
+    
+    # Receipt of medication information polarity
+    if @patient.question4 == true
+      @User_priorinfo = "+"
+      @info_p = "pos"
+    else
+      @User_priorinfo = "-"
+      @info_p = "neg"
+    end
+    
+    # Trust for Medication polarity
+    trust_score = (@patient.question51 + @patient.question52 + \
+                    @patient.question53 + @patient.question54 + \
+                    @patient.question55 + @patient.question56) / 6
+    if trust_score > 3.17
+      @User_trust = "-"
+      @trust_p = "neg"
+    else
+      @User_trust = "+"
+      @trust_p = "pos"
+    end
+    
+    
+    # @User_age = @patient.age >= 70 ? "+" : "-"
+    # @User_risk = (@patient.question2 == 4 or @patient.question2 == 5) ? "+" : "-"
+    # @User_literacy = (@patient.question3 == 4 or @patient.question3 == 5) ? "-" : "+"
+    # @User_priorinfo = @patient.question4 == true ? "+" : "-"
+    # trust_score = (@patient.question51 + @patient.question52 + \
+    #                 @patient.question53 + @patient.question54 + \
+    #                 @patient.question55 + @patient.question56) / 6
+    # # opinion_score = opinion_total / 6
+    # @User_trust = trust_score > 3.17 ? "-" : "+"
   end
   
   # GET /questions
