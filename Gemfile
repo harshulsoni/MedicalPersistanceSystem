@@ -50,3 +50,8 @@ group :development do
   gem 'spring'
 end
 
+gem 'devise'
+#gem 'rails_admin', '~> 2.0'
+gem 'rails_admin'
+gem 'dotenv-rails'
+gem 'mailgun_rails'

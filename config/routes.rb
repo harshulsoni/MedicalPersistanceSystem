@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  devise_for :users, :skip => [:registrations] 
   resources :questions
   get '/' => 'questions#login'
   get '/dashboard' => 'questions#dashboard'
@@ -58,8 +60,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  # root 'questions#index'
- root 'questions#login'
+  #root 'questions#login'
+  root 'questions#index'
+  get '/users/sign_out/' =>'sessions#destroy', :as => :logout
+  #logout 'sessions#destroy'
 
   #root to: "controller#action"
   #root questions_path

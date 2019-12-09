@@ -1,8 +1,11 @@
 class QuestionsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_question, only: [:show, :edit, :update, :destroy]
   
   def login
-    
+    if current_user
+      redirect_to questions_path
+    end
   end
  
   def dashboard
@@ -13,6 +16,9 @@ class QuestionsController < ApplicationController
   # GET /questions.json
  
   def index
+    if current_user.admin == true
+      redirect_to '/admin'
+    end
     @questions = Question.all
   end
 
