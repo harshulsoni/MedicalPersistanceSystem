@@ -4,8 +4,8 @@ class HomeController < ApplicationController
     if current_user.admin == true
       redirect_to '/admin'
     end
-    # @questions = Question.all
+    @questions = Question.all
     
-    @questions = Question.where(user_id: current_user.provider_id)
+    # @questions = Question.where(user_id: current_user.provider_id)
   end
 end
