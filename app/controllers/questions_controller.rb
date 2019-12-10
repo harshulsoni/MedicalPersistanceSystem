@@ -31,63 +31,19 @@ class QuestionsController < ApplicationController
     end
     
     # Age polarity
-    if @patient.age >= 70 
-      @User_age = "+"
-      @age_p = "pos"
-    else
-      @User_age = "-"
-      @age_p = "neg"
-    end
-    
+    @User_age = @patient.age >= 70 ? "+" : "-"
     # Risk of fracturing polarity
-    if @patient.question2 == 4 or @patient.question2 == 5
-      @User_risk = "-"
-      @risk_p = "neg"
-    else
-      @User_risk = "+"
-      @risk_p = "pos"
-    end 
-    
+    @User_risk = (@patient.question2 == 4 or @patient.question2 == 5) ? "+" : "-"
     # Adequate Literacy Polarity
-    if @patient.question3 == 4 or @patient.question3 == 5
-      @User_literacy = "-"
-      @literacy_p = "neg"
-    else
-      @User_literacy = "+"
-      @literacy_p = "pos"
-    end
-    
+    @User_literacy = (@patient.question3 == 4 or @patient.question3 == 5) ? "-" : "+"
     # Receipt of medication information polarity
-    if @patient.question4 == true
-      @User_priorinfo = "+"
-      @info_p = "pos"
-    else
-      @User_priorinfo = "-"
-      @info_p = "neg"
-    end
-    
+    @User_priorinfo = @patient.question4 == true ? "+" : "-"
     # Trust for Medication polarity
     trust_score = (@patient.question51 + @patient.question52 + \
                     @patient.question53 + @patient.question54 + \
                     @patient.question55 + @patient.question56) / 6
-    if trust_score > 3.17
-      @User_trust = "-"
-      @trust_p = "neg"
-    else
-      @User_trust = "+"
-      @trust_p = "pos"
-    end
-    
-    
-    # @User_age = @patient.age >= 70 ? "+" : "-"
-    # @User_risk = (@patient.question2 == 4 or @patient.question2 == 5) ? "+" : "-"
-    # @User_literacy = (@patient.question3 == 4 or @patient.question3 == 5) ? "-" : "+"
-    # @User_priorinfo = @patient.question4 == true ? "+" : "-"
-    # trust_score = (@patient.question51 + @patient.question52 + \
-    #                 @patient.question53 + @patient.question54 + \
-    #                 @patient.question55 + @patient.question56) / 6
-    # # opinion_score = opinion_total / 6
-    # @User_trust = trust_score > 3.17 ? "-" : "+"
+    # opinion_score = opinion_total / 6
+    @User_trust = trust_score > 3.17 ? "-" : "+"
   end
   
   # GET /questions

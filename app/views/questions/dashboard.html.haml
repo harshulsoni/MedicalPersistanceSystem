@@ -115,22 +115,8 @@
         .card-header
             %h5{:class=>"card-title"} Counselling Points
         .card-body
-            %strong Age
-            - @counsel_points[@stage]['age'][@age_p].each_with_index do |cp, index|
+            - @counsel_points[@stage].each_with_index do |cp, index|
                 %p #{index+1}) #{cp}
-            %strong Risk
-            - @counsel_points[@stage]['risk'][@risk_p].each_with_index do |cp, index|
-                %p #{index+1}) #{cp}
-            %strong Literacy
-            - @counsel_points[@stage]['literacy'][@literacy_p].each_with_index do |cp, index|
-                %p #{index+1}) #{cp}
-            %strong Trust
-            - @counsel_points[@stage]['trust'][@trust_p].each_with_index do |cp, index|
-                %p #{index+1}) #{cp}
-            %strong Medication Information
-            - @counsel_points[@stage]['info'][@info_p].each_with_index do |cp, index|
-                %p #{index+1}) #{cp}
-
     %br
     .container-footer
         = link_to 'Back to List', root_path, :class => "dash btn btn-danger btn-lg"
