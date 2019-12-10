@@ -4,20 +4,69 @@
       .login.d-flex.align-items-center.py-5
         .container
           = link_to 'Take New Survey', new_question_path, :class => "btn btn-primary btn-lg",:id => "center"
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+          
+    .col-md-8.col-lg-6
+      .login.d-flex.align-items-center.py-5
+        .container
+          .row
+            .col-md-9.col-lg-8.mx-auto
+              %h3.text-center.login-heading.mb-4 Welcome Sign In!
+              = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+                .form-label-group
+                
+                  = f.label :email, "Email Adress", class: "control-label"
+                  %br/
+                  %br/
+                  = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", id:"inputEmail", :placeholder => "Email Address"
+                
+                .form-label-group
+                  
+                  = f.label :password, class: "control-label"
+                  %br/
+                  %br/ 
+                  = f.password_field :password, autocomplete: "current-password", class: "form-control", :placeholder => "Password", id: "inputPassword"
+                - if devise_mapping.rememberable?
+                  .text-center.custom-control.custom-checkbox.mb-3
+                    = f.check_box :remember_me, class: "custom-control-input"
+                    = f.label :remember_me, class: "custom-control-label"
+                .actions
+                  
+                  = f.submit "Sign in", class: "btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+              .text-center    
+                = render "devise/shared/links"
+
+              // // %form{:action => "/questions", :method => "GET"}
+              //   .form-label-group
+              //     %input#inputEmail.form-control{:autofocus => "", :placeholder => "Email address", :required => "", :type => "email"}/
+              //     %label{:for => "email"} Email address
+              //   .form-label-group
+              //     %input#inputPassword.form-control{:placeholder => "Password", :required => "", :type => "password"}/
+              //     %label{:for => "password"} Password
+              //   - if devise_mapping.rememberable?  
+                
+              //     .custom-control.custom-checkbox.mb-3
+              //       %input#customCheck1.custom-control-input{:type => "checkbox"}/
+              //       %label.custom-control-label{:for => "remember_me"} Remember password
+              //   %button.btn.btn-lg.btn-primary.btn-block.btn-login.text-uppercase.font-weight-bold.mb-2{:type => "submit"} Sign in
+              // 
+              //   .text-center
+              //     %a.small{:href => "#"} Forgot password?
+                  
+                  
+// %h2 Log in
+// = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+//   .field
+//     = f.label :email
+//     %br/
+//     = f.email_field :email, autofocus: true, autocomplete: "email"
+//   .field
+//     = f.label :password
+//     %br/
+//     = f.password_field :password, autocomplete: "current-password"
+//   - if devise_mapping.rememberable?
+//     .field
+//       = f.check_box :remember_me
+//       = f.label :remember_me
+//   .actions
+//     = f.submit "Log in"
+// = render "devise/shared/links"

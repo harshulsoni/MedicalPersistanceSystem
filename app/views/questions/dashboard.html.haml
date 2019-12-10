@@ -97,7 +97,7 @@
                             - if @User_stage == 4
                                 = @User_trust
                     %tr
-                        %th{:scope => "row"} Receipt for Medication Information
+                        %th{:scope => "row"} Receipt of Medication Information
                         %td
                             - if @User_stage == 1
                                 = @User_priorinfo
@@ -133,5 +133,5 @@
 
     %br
     .container-footer
-        = link_to 'Back to List', questions_path, :class => "dash btn btn-danger btn-lg"
+        = link_to 'Back to List', root_path, :class => "dash btn btn-danger btn-lg"
     %br
