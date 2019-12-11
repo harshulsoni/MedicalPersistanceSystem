@@ -7,26 +7,44 @@
       %ul
         - @question.errors.full_messages.each do |message|
           %li= message
-  .form-group
-    = f.label :name,'Please enter your full name:'
-    %br/
-    = f.text_field :name,:class => "form-control",:required => true
+  .row
+    .col
+      .form-group
+        = f.label :name,'Please enter your full name:',:class => "font-weight-bold"
+        %br/
+        = f.text_field :name,:class => "form-control",:required => true
+
+    .col
+      .form-group
+        = f.label :user_id,'Assigned Counsellors user ID',:class => "font-weight-bold"
+        %br/
+        = f.text_field :user_id, :class => "form-control",:required => true
+
+  %br/ 
+  .row
+    .col
+      
+      .form-group
+        = f.label :mrn,'Please enter your Medical Record Number',:class => "font-weight-bold"
+        %br/
+        = f.text_field :mrn, :class => "form-control",:required => true
+    .col
+      .form-group
+      
+        = f.label :age, 'Please enter your age (in years):',:class => "font-weight-bold"
+        %br/
+        = f.number_field :age,:class => "form-control",:required => true        
+  %br/
+  // .form-group
+  //   = f.label :age, 'Please enter your age (in years):'
+  //   %br/
+  //   = f.number_field :age,:class => "form-control",:required => true
   %br/
   .form-group
-    = f.label :mrn,'Please enter your Medical Record Number'
-    %br/
-    = f.text_area :mrn,:class => "form-control",:required => true
-  %br/  
-  .form-group
-    = f.label :age, 'Please enter your age (in years):'
-    %br/
-    = f.number_field :age,:class => "form-control",:required => true
-  %br/
-  .form-group
-    = f.label :question2,'Compared to women your age, how would you rate your own risk of fracturing or breaking a bone?'
+    = f.label :question2,'Compared to women your age, how would you rate your own risk of fracturing or breaking a bone?',:class => "font-weight-bold"
   .radio 
     %label
-      = f.radio_button :question2, 1
+      = f.radio_button :question2, 1, :required => true
       Much Lower     
   .radio
     %label
@@ -46,10 +64,10 @@
       Much Higher
   %br/
   .form-group
-    = f.label :question3,'How confident are you filling out medical forms by yourself?'
+    = f.label :question3,'How confident are you filling out medical forms by yourself?',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question3, 1
+      = f.radio_button :question3, 1,:required => true
       Not at all
   .radio
     %label
@@ -69,10 +87,10 @@
       Extremely
   %br/
   .form-group
-    = f.label :question4,'People get information about osteoporosis medication from different sources. Have you recieved information about possible osteoporosis medication in past year?'
+    = f.label :question4,'People get information about osteoporosis medication from different sources. Have you recieved information about possible osteoporosis medication in past year?',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question4, true
+      = f.radio_button :question4, true,:required => true
       Yes
   .radio
     %label
@@ -80,10 +98,10 @@
       No
   %br/ 
   .form-group
-    = f.label :question51,'There are better ways for me to treat my osteoporosis besides medication.'
+    = f.label :question51,'There are better ways for me to treat my osteoporosis besides medication.',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question51, 1
+      = f.radio_button :question51, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -103,10 +121,10 @@
       Strongly Agree
   %br/
   .form-group
-    = f.label :question52, 'Doctors are too quick to prescribe medication.'
+    = f.label :question52, 'Doctors are too quick to prescribe medication.',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question51, 1
+      = f.radio_button :question52, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -126,10 +144,10 @@
       Strongly Agree
   %br/
   .form-group
-    = f.label :question53, 'Doctors of often give medication when advice would be better'
+    = f.label :question53, 'Doctors often give medication when advice would be better',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question53, 1
+      = f.radio_button :question53, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -149,10 +167,10 @@
       Strongly Agree
   %br/
   .form-group
-    = f.label :question54, 'I can take care of my osteoporosis without medication.'
+    = f.label :question54, 'I can take care of my osteoporosis without medication.',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question54, 1
+      = f.radio_button :question54, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -172,10 +190,10 @@
       Strongly Agree
   %br/
   .form-group
-    = f.label :question55, 'Medications often cause more problems than they solve.'
+    = f.label :question55, 'Medications often cause more problems than they solve.',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question55, 1
+      = f.radio_button :question55, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -195,10 +213,10 @@
       Strongly Agree
   %br/
   .form-group
-    = f.label :question56, 'I prefer not to take medication'
+    = f.label :question56, 'I prefer not to take medication',:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question56, 1
+      = f.radio_button :question56, 1,:required => true
       Strongly Disgree
   .radio
     %label
@@ -219,10 +237,10 @@
   %br/
     
   .form-group
-    = f.label :question6, "Please choose the one statement that best reflects your feelings about recieving medicines now"
+    = f.label :question6, "Please choose the one statement that best reflects your feelings about recieving medicines now",:class => "font-weight-bold"
   .radio
     %label
-      = f.radio_button :question6, 1
+      = f.radio_button :question6, 1,:required => true
       I do not think I need treatment for osteoporosis    
   .radio
     %label
