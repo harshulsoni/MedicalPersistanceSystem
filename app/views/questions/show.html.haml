@@ -2,7 +2,7 @@
 
 .container
   %p#notice= notice
-  %h2.text-center Patient Response
+  %h2.text-center{style: 'color: #79589f;'} Response
   %br/
   %p
     %strong Doctor's Name:
@@ -86,6 +86,8 @@
     = ("I have started medication for osteoporosis" if @question.question6==5)
   
   %br/
+  = link_to 'Edit Response', edit_question_path(@question),:class => "float-center btn btn-secondary"
+  = link_to '  Done ', root_path, :class => " btn btn-danger"
 // %span#pad
 // %span#pad 
 // %span#pad 
@@ -95,5 +97,7 @@
 //     = link_to '  Done ', root_path, :class => " btn btn-danger"
 //   -else
 
-= link_to 'Edit Response', edit_question_path(@question),:class => "btn btn-secondary"
-= link_to '  Done ', root_path, :class => " btn btn-danger"
+// = link_to 'Edit Response', edit_question_path(@question),:class => "float-center btn btn-secondary"
+// = link_to '  Done ', root_path, :class => " btn btn-danger"
+%br/
+%br/
