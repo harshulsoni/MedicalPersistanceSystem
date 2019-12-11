@@ -1,7 +1,21 @@
 .container
   %p#notice= notice
-  %h2{style: 'color: #007bff;'} List of Patients
   %br/
+  %h2.float-left{style: 'color: #007bff;'} List of Patients
+  - if current_user
+    = link_to 'Logout', destroy_user_session_path, method: :delete , :class => "sticky-top float-right btn btn-outline-danger",:id => "right"
+    %br/
+  %br/
+  
+  %form.form-inline{:action => "", :method => "GET"}
+    %input.form-control.mr-sm-2{:name => "search_name","aria-label" => "Search", :placeholder => "Search", :type => "search"}/ 
+    // %input{:type => "submit", :value => "Search for Patient"}/
+    %input.btn.btn-outline-success.my-2.my-sm-0{:type => "submit", :value => "Search"}/
+    // = link_to 'All Patients', root_path , :class => "float-right"
+  = link_to 'All Patients', root_path , :class => "float-right"  
+  %br/
+
+
   %table.table.table-striped
     %thead
       %tr
@@ -17,10 +31,10 @@
           %td= question.mrn
           %td= question.age
           %td= link_to 'Show Response', question
-          %td= link_to 'Edit Response', edit_question_path(question)
-          %td= link_to 'Delete', question, method: :delete, data: { confirm: 'Are you sure?' }
+          // %td= link_to 'Edit Response', edit_question_path(question)
+          // %td= link_to 'Delete', question, method: :delete, data: { confirm: 'Are you sure?' }
   %br/
   // = link_to 'New Response', new_question_path
 
-  - if current_user
-    = link_to 'Logout', destroy_user_session_path, method: :delete , :class => "btn btn-outline-success",:id => "center"
+  // - if current_user
+  //   = link_to 'Logout', destroy_user_session_path, method: :delete , :class => "btn btn-outline-success",:id => "center"

@@ -62,6 +62,8 @@ class QuestionsController < ApplicationController
     questionFile = File.read('config/questions.json')
     @questionsHash = JSON.parse(questionFile)
     @question = Question.new
+    @userList = User.all
+    
   end
 
   # GET /questions/1/edit

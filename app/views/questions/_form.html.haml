@@ -18,7 +18,11 @@
       .form-group
         = f.label :user_id,'Assigned Counsellors user ID',:class => "font-weight-bold"
         %br/
-        = f.text_field :user_id, :class => "form-control",:required => true
+        //= f.text_field :user_id, :class => "form-control",:required => true
+   
+        = f.select(:user_id) do 
+          - @userList.each do |l|
+            = content_tag(:option, l.provider_id, value: l.provider_id, :class => "form form-group form-control",:required => true )
 
   %br/ 
   .row
@@ -27,13 +31,13 @@
       .form-group
         = f.label :mrn,'Please enter your Medical Record Number',:class => "font-weight-bold"
         %br/
-        = f.text_field :mrn, :class => "form-control",:required => true
+        = f.text_field :mrn, :class => "form-control",:required => true, :maxlength => "10"
     .col
       .form-group
       
         = f.label :age, 'Please enter your age (in years):',:class => "font-weight-bold"
         %br/
-        = f.number_field :age,:class => "form-control",:required => true        
+        = f.number_field :age,:class => "form-control",:required => true, :min => 0 , :max => 199        
   %br/
   // .form-group
   //   = f.label :age, 'Please enter your age (in years):'

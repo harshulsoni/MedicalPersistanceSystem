@@ -11,16 +11,17 @@
                 .col-8
                     %h6 Name : #{@patient.name}
                     %h6 Age in Years : #{@patient.age}
-                    %h6 MRN : #{@patient.mrn}
+                    
                 .col-4
+                    %h6 MRN : #{@patient.mrn}
                     %h6 Date : #{@patient.created_at}
                     %br
-                    .dropdown
-                        %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
-                        .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
-                            %a.dropdown-item{:href => "#"} Action
-                            %a.dropdown-item{:href => "#"} Another action
-                            %a.dropdown-item{:href => "#"} Something else here
+                    // .dropdown
+                    //     %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
+                    //     .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+                    //         %a.dropdown-item{:href => "#"} Action
+                    //         %a.dropdown-item{:href => "#"} Another action
+                    //         %a.dropdown-item{:href => "#"} Something else here
 
                         
     %br    
