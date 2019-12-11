@@ -1,5 +1,6 @@
 .container
-  %p#notice= notice
+  %p.alert.alert-warning= flash[:notice]
+  // %p#notice= notice
   %br/
   %h2.float-left{style: 'color: #79589f;'}List of Patients 
   - if current_user
