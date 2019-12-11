@@ -11,6 +11,10 @@
           .row
             .col-md-9.col-lg-8.mx-auto
               %h3.text-center.login-heading.mb-4 Welcome Sign In!
+              - if flash[:notice]
+                %p.alert = flash[:notice]
+              - if flash[:alert]
+                %p.alert= flash[:alert]
               = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
                 .form-label-group
                 
