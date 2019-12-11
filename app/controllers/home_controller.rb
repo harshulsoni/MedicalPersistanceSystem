@@ -11,7 +11,7 @@ class HomeController < ApplicationController
     if session[:search_name]
       @questions = Question.where(user_id: current_user.provider_id)
       # @questions = Question.where("name LIKE ?", "%#{session[:search_name]}%")
-      @questions = @questions.where("name LIKE ?", "%#{session[:search_name]}%")
+      @questions = @questions.where("lower(name) LIKE ?", "%#{session[:search_name]}%".downcase)
       session[:search_name] = nil    
             # @teams = @teams.where(code: @players.pluck(:team))
     else
