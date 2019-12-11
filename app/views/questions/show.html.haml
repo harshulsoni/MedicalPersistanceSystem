@@ -5,7 +5,7 @@
   %h2.text-center Patient Response
   %br/
   %p
-    %strong Name:
+    %strong Doctor's Name:
     = @question.user_id
   %p
     %strong Name:
@@ -90,10 +90,10 @@
 // %span#pad 
 // %span#pad 
 
-.container
-  - if @current_user.provider_id == true
-    = link_to '  Done ', root_path, :class => " btn btn-danger"
-  -else
-  
-    = link_to 'Edit Response', edit_question_path(@question),:class => "btn btn-secondary"
-    = link_to '  Done ', root_path, :class => " btn btn-danger"
+// .container
+//   - if @current_user.provider_id == true
+//     = link_to '  Done ', root_path, :class => " btn btn-danger"
+//   -else
+
+= link_to 'Edit Response', edit_question_path(@question),:class => "btn btn-secondary"
+= link_to '  Done ', root_path, :class => " btn btn-danger"
