@@ -17,14 +17,14 @@
                   = f.label :email, "Email Adress", class: "control-label"
                   %br/
                   %br/
-                  = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", id:"inputEmail", :placeholder => "Email Address"
+                  = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", id:"inputEmail", placeholder: "Email Address"
                 
                 .form-label-group
                   
                   = f.label :password, class: "control-label"
                   %br/
                   %br/ 
-                  = f.password_field :password, autocomplete: "current-password", class: "form-control", :placeholder => "Password", id: "inputPassword"
+                  = f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password", id: "inputPassword"
                 - if devise_mapping.rememberable?
                   .text-center.custom-control.custom-checkbox.mb-3
                     = f.check_box :remember_me, class: "custom-control-input"

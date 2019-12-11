@@ -55,6 +55,10 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+    @current_user = current_user
+  end
+  
+  def showtouser
   end
 
   # GET /questions/new
@@ -62,6 +66,8 @@ class QuestionsController < ApplicationController
     questionFile = File.read('config/questions.json')
     @questionsHash = JSON.parse(questionFile)
     @question = Question.new
+    @userList = User.all
+    
   end
 
   # GET /questions/1/edit
