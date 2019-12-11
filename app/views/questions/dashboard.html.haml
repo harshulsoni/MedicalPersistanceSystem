@@ -14,7 +14,7 @@
                     
                 .col-4
                     %h6 MRN : #{@patient.mrn}
-                    %h6 Date : #{@patient.created_at}
+                    %h6 Date : #{@patient.created_at.strftime("%m-%d-%Y")}
                     %br
                     // .dropdown
                     //     %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
