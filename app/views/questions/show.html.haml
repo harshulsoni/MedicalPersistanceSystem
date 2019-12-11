@@ -86,8 +86,11 @@
     = ("I have started medication for osteoporosis" if @question.question6==5)
   
   %br/
-  = link_to 'Edit Response', edit_question_path(@question),:class => "float-center btn btn-secondary"
-  = link_to '  Done ', root_path, :class => " btn btn-danger"
+  - if not user_signed_in?
+    = link_to 'Edit Response', edit_question_path(@question),:class => "float-center btn btn-secondary"
+    = link_to '  Submit ', root_path, :class => " btn btn-danger"
+  - else
+  = link_to '  Back ', root_path, :class => " btn btn-danger"
 // %span#pad
 // %span#pad 
 // %span#pad 
