@@ -1,0 +1,14 @@
+.container-fluid.bg-image
+  .row.no-gutter
+    .d-none.d-md-flex.col-md-4.col-lg-6
+      .login.d-flex.align-items-center.py-5
+        .container
+          %h2S.text-center.login-heading.mb-4 How aware are you about Osteoporosis ? 
+          %h2.text-center.login-heading.mb-4 Osteoporosis affects 200 million people worldwide. Women are more prone to osteoporosis. 1 out of 5 women receive an evaluation for osteoporosis. From this 1 out of 2 women are prescribed medication. 
+          %h2.text-center.login-heading.mb-4 Take our Survey. Then your provider will receive this information and will help better guide you.
+          = link_to 'Take New Survey', new_question_path, :class => "btn btn-primary btn-lg",:id => "center"
+            
+    .d-none.d-md-flex.col-md-4.col-lg-6
+      .login.d-flex.align-items-center.py-5
+        .container
+          = link_to 'Admin/Provider Login', '/login', :class => "btn btn-primary btn-lg",:id => "center"
