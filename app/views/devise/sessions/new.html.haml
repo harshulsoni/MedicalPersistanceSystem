@@ -1,9 +1,9 @@
 .container-fluid.bg-image
   .row.no-gutter
-    .d-none.d-md-flex.col-md-4.col-lg-6
-      .login.d-flex.align-items-center.py-5
-        .container
-          = link_to 'Take New Survey', new_question_path, :class => "btn btn-primary btn-lg",:id => "center"
+    // .d-none.d-md-flex.col-md-4.col-lg-6
+    //   .login.d-flex.align-items-center.py-5
+    //     .container
+    //       = link_to 'Take New Survey', new_question_path, :class => "btn btn-primary btn-lg",:id => "center"
           
     .col-md-8.col-lg-6
       .login.d-flex.align-items-center.py-5
@@ -11,10 +11,10 @@
           .row
             .col-md-9.col-lg-8.mx-auto
               %h3.text-center.login-heading.mb-4 Welcome Sign In!
-              - if flash[:notice]
-                %p.alert = flash[:notice]
+              // - if flash[:notice]
+              //   %p.alert.alert-warning= flash[:notice]
               - if flash[:alert]
-                %p.alert= flash[:alert]
+                %p.alert.alert-warning= flash[:alert]
               = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
                 .form-label-group
                 

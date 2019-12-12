@@ -64,7 +64,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   #root 'questions#login'
-  root 'home#index'
+  get '/login' => 'home#index', :as => :login
+  root 'main#index'
   get '/users/sign_out/' =>'sessions#destroy', :as => :logout
   #logout 'sessions#destroy'
 
