@@ -34,7 +34,7 @@ class QuestionsController < ApplicationController
     @User_age = @patient.age >= 70 ? "+" : "-"
     # Risk of fracturing polarity
     @User_risk = (@patient.question2 == 4 or @patient.question2 == 5) ? "+" : "-"
-    # Adequate Literacy Polarity
+    # Inadequate Literacy Polarity
     @User_literacy = (@patient.question3 == 4 or @patient.question3 == 5) ? "-" : "+"
     # Receipt of medication information polarity
     @User_priorinfo = @patient.question4 == true ? "+" : "-"

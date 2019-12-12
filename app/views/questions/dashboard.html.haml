@@ -11,17 +11,16 @@
                 .col-8
                     %h6 Name : #{@patient.name}
                     %h6 Age in Years : #{@patient.age}
-                    
-                .col-4
                     %h6 MRN : #{@patient.mrn}
-                    %h6 Date : #{@patient.created_at.strftime("%m-%d-%Y")}
+                .col-4
+                    %h6 Date : #{@patient.created_at}
                     %br
-                    // .dropdown
-                    //     %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
-                    //     .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
-                    //         %a.dropdown-item{:href => "#"} Action
-                    //         %a.dropdown-item{:href => "#"} Another action
-                    //         %a.dropdown-item{:href => "#"} Something else here
+                    .dropdown
+                        %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"} View Previous Reports
+                        .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+                            %a.dropdown-item{:href => "#"} Action
+                            %a.dropdown-item{:href => "#"} Another action
+                            %a.dropdown-item{:href => "#"} Something else here
 
                         
     %br    
@@ -70,7 +69,7 @@
                             - if @User_stage == 4
                                 = @User_risk
                     %tr
-                        %th{:scope => "row"} Adequate Literacy
+                        %th{:scope => "row"} Inadequate Literacy
                         %td
                             - if @User_stage == 1
                                 = @User_literacy
@@ -114,7 +113,7 @@
     %br                    
     .card
         .card-header
-            %h5{:class=>"card-title"} Counselling Points
+            %h5{:class=>"card-title"} Counseling Points
         .card-body
             - @counsel_points[@stage].each_with_index do |cp, index|
                 %p #{index+1}) #{cp}
